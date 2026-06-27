@@ -268,6 +268,103 @@
     .footer-col h4 { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.4; margin-bottom: 0.75rem; }
     .footer-link { font-size: 13px; opacity: 0.6; display: block; margin-bottom: 0.4rem; text-decoration: none; color: var(--cream); transition: opacity 0.2s; }
     .footer-link:hover { opacity: 1; }
+
+    /* ============================================================
+       MOBIEL — alles onder 768px (smartphone)
+       ============================================================ */
+    @media (max-width: 768px) {
+
+      /* Navigatie */
+      nav { padding: 0.9rem 1.25rem; }
+      .nav-links { gap: 0.75rem; }
+      .nav-links a { font-size: 10px; letter-spacing: 0.06em; }
+
+      /* Hero */
+      .hero { grid-template-columns: 1fr; }
+      .hero-img { height: 280px; }
+      .hero-text { padding: 2.5rem 1.5rem; gap: 1rem; }
+      .hero-title { font-size: 28px; }
+      .hero-body { font-size: 13px; max-width: 100%; }
+      .hero-btns { flex-direction: column; }
+      .btn-primary, .btn-ghost { width: 100%; text-align: center; }
+
+      /* Intro Jana */
+      .intro-section { grid-template-columns: 1fr; }
+      .intro-img { height: 300px; }
+      .intro-text { padding: 2rem 1.5rem; }
+      .intro-text h2 { font-size: 24px; }
+
+      /* Diensten */
+      .diensten-strip { grid-template-columns: 1fr; }
+      .dienst-card { border-right: none; border-bottom: 0.5px solid var(--border); padding: 2rem 1.5rem; }
+      .dienst-card:last-child { border-bottom: none; }
+
+      /* Stappen */
+      .steps { grid-template-columns: 1fr 1fr; }
+      .step { border-bottom: 0.5px solid var(--border); }
+      .step:nth-child(2n) { border-right: none; }
+
+      /* Galerij frame */
+      .gal-wrap { padding: 1rem 1rem 0; }
+      .gal-grid { grid-template-columns: 1fr; }
+      .gal-tall { height: 260px; }
+      .gal-stack { grid-template-rows: auto; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 6px; }
+      .gal-short { height: 160px; }
+      .gal-side { grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px 1rem 1.5rem; }
+      .gal-sq { height: 150px; }
+      .gal-side > div:last-child { grid-column: span 2; }
+
+      /* Secties algemeen */
+      .section { padding: 2.5rem 1.25rem; }
+      .sec-header { margin-bottom: 2rem; }
+      .sec-title { font-size: 24px; }
+
+      /* Prijzen */
+      .toggle-row { margin-bottom: 1.5rem; }
+      .cards { grid-template-columns: 1fr !important; max-width: 100%; }
+      .options-box { margin: 0 0 1rem; }
+      .brochure-row { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+      .brochure-row .btn-ghost { width: 100%; text-align: center; }
+
+      /* Bloom Bar */
+      .bar-hero { grid-template-columns: 1fr; }
+      .bar-hero-img { height: 280px; min-height: unset; }
+      .bar-hero-text { padding: 2rem 1.5rem; min-height: unset; }
+      .bar-hero-text h2 { font-size: 26px; }
+      .bar-gallery { grid-template-columns: 1fr 1fr; padding: 1rem; gap: 6px; }
+      .bar-gallery > div:last-child { grid-column: span 2; }
+      .bar-gal-item { height: 180px; }
+      .bar-grid { grid-template-columns: 1fr; max-width: 100%; }
+      .bar-note { margin: 0 0 1rem; }
+      .bar-brochure { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+      .bar-brochure .btn-ghost { width: 100%; text-align: center; }
+
+      /* Reservatie */
+      .reserve-section { padding: 2.5rem 1.25rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .totaal-bar { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+      .submit-row { flex-direction: column; align-items: stretch; }
+      .submit-row .btn-primary { text-align: center; }
+
+      /* FAQ */
+      .faq-section { padding: 2.5rem 1.25rem; }
+      .faq-q { font-size: 13px; }
+
+      /* Footer */
+      footer { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 1.5rem; }
+    }
+
+    /* Tablet — tussen 769px en 1024px */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .hero-title { font-size: 32px; }
+      .hero-text { padding: 2.5rem 2rem; }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      .step:nth-child(2n) { border-right: none; }
+      .step { border-bottom: 0.5px solid var(--border); }
+      .cards { grid-template-columns: repeat(2, 1fr) !important; }
+      .bar-hero-text { padding: 2rem 1.5rem; }
+      footer { grid-template-columns: 1fr 1fr; }
+    }
   </style>
 </head>
 <body>
