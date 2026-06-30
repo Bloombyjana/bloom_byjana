@@ -15,7 +15,7 @@
        ============================================================ -->
 
   <!-- ✏️ PAGINATITEL — verschijnt in het browsertabblad -->
-  <title>BLOOM. by Jana — Bruidsboeket laten inlijsten · Pelt</title>
+  <title>Bloom by Jana — Bruidsboeket laten inlijsten · Pelt</title>
 
 
   <!-- ============================================================
@@ -44,6 +44,10 @@
   <meta property="og:url" content="https://bloombyjana.github.io/bloom_byjana/">
   <!-- ✏️ Voeg later een mooie foto toe die verschijnt bij het delen — zet het pad naar je foto -->
   <meta property="og:image" content="https://bloombyjana.github.io/bloom_byjana/hero-frame.jpg">
+
+  <!-- Canonical URL — vertelt Google wat het "officiële" adres van deze pagina is -->
+  <!-- ✏️ Vervang door jouw eigen websiteadres als dit verandert -->
+  <link rel="canonical" href="https://bloombyjana.github.io/bloom_byjana/">
 
   <!-- Structured data — vertelt Google exact wat jouw bedrijf is -->
   <script type="application/ld+json">
@@ -160,6 +164,14 @@
     .intro-text h2 em { font-style: italic; color: var(--mauve); }
     .intro-text p { font-size: 14px; color: var(--mid); line-height: 1.95; }
     .signature { font-family: 'Playfair Display', serif; font-size: 24px; font-style: italic; color: var(--mauve); margin-top: 0.25rem; }
+
+    /* ✏️ SFEERFOTO-ONDERBREKING — full-width foto met citaat, tussen de Jana-intro en de diensten */
+    .mood-break { position: relative; height: 340px; overflow: hidden; }
+    .mood-break img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .mood-break .img-ph { width: 100%; height: 100%; }
+    .mood-break::after { content: ''; position: absolute; inset: 0; background: rgba(43,31,26,0.32); }
+    .mood-break-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 2rem; }
+    .mood-break-text span { font-family: 'Playfair Display', serif; font-style: italic; font-size: 26px; color: var(--cream); max-width: 600px; line-height: 1.5; }
     .intro-mail { font-size: 12px; color: var(--mauve); text-decoration: none; letter-spacing: 0.04em; }
     .intro-mail:hover { color: var(--rust); }
 
@@ -240,18 +252,18 @@
     /* ============================================================
        BLOOM BAR
        ============================================================ */
-    .bar-hero { display: grid; grid-template-columns: 1fr 1fr; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
-    .bar-hero-img { height: 460px; overflow: hidden; }
-    .bar-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .bar-hero-img .img-ph { width: 100%; height: 100%; }
-    .bar-hero-text { padding: 3rem 2.5rem; background: var(--peach); display: flex; flex-direction: column; justify-content: center; gap: 1.1rem; min-height: 460px; }
-    .bar-hero-text h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--rust-dark); line-height: 1.25; }
-    .bar-hero-text h2 em { font-style: italic; color: var(--mauve); }
-    .bar-hero-text p { font-size: 14px; color: var(--mid); line-height: 1.95; }
-    .bar-gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; padding: 2rem; background: var(--cream); border-bottom: 0.5px solid var(--border); }
-    .bar-gal-item { height: 220px; overflow: hidden; }
-    .bar-gal-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .bar-gal-item .img-ph { width: 100%; height: 100%; }
+    .bar-hero, .frame-hero { display: grid; grid-template-columns: 1fr 1fr; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+    .bar-hero-img, .frame-hero-img { height: 460px; overflow: hidden; }
+    .bar-hero-img img, .frame-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .bar-hero-img .img-ph, .frame-hero-img .img-ph { width: 100%; height: 100%; }
+    .bar-hero-text, .frame-hero-text { padding: 3rem 2.5rem; background: var(--peach); display: flex; flex-direction: column; justify-content: center; gap: 1.1rem; min-height: 460px; }
+    .bar-hero-text h2, .frame-hero-text h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--rust-dark); line-height: 1.25; }
+    .bar-hero-text h2 em, .frame-hero-text h2 em { font-style: italic; color: var(--mauve); }
+    .bar-hero-text p, .frame-hero-text p { font-size: 14px; color: var(--mid); line-height: 1.95; }
+    .bar-gallery, .frame-gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; padding: 2rem; background: var(--cream); border-bottom: 0.5px solid var(--border); }
+    .bar-gal-item, .frame-gal-item { height: 220px; overflow: hidden; }
+    .bar-gal-item img, .frame-gal-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .bar-gal-item .img-ph, .frame-gal-item .img-ph { width: 100%; height: 100%; }
     .bar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 0.5px solid var(--border); max-width: 680px; margin: 0 auto 1.5rem; }
     .bar-card { background: var(--cream); padding: 1.75rem 1.5rem; }
     .bar-card-title { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--rust-dark); margin-bottom: 0.2rem; }
@@ -360,6 +372,9 @@
       .intro-text { padding: 2rem 1.5rem; }
       .intro-text h2 { font-size: 24px; }
 
+      .mood-break { height: 220px; }
+      .mood-break-text span { font-size: 19px; }
+
       /* Diensten */
       .diensten-strip { grid-template-columns: 1fr; }
       .dienst-card { border-right: none; border-bottom: 0.5px solid var(--border); padding: 2rem 1.5rem; }
@@ -393,13 +408,13 @@
       .brochure-row .btn-ghost { width: 100%; text-align: center; }
 
       /* Bloom Bar */
-      .bar-hero { grid-template-columns: 1fr; }
-      .bar-hero-img { height: 280px; min-height: unset; }
-      .bar-hero-text { padding: 2rem 1.5rem; min-height: unset; }
-      .bar-hero-text h2 { font-size: 26px; }
-      .bar-gallery { grid-template-columns: 1fr 1fr; padding: 1rem; gap: 6px; }
-      .bar-gallery > div:last-child { grid-column: span 2; }
-      .bar-gal-item { height: 180px; }
+      .bar-hero, .frame-hero { grid-template-columns: 1fr; }
+      .bar-hero-img, .frame-hero-img { height: 280px; min-height: unset; }
+      .bar-hero-text, .frame-hero-text { padding: 2rem 1.5rem; min-height: unset; }
+      .bar-hero-text h2, .frame-hero-text h2 { font-size: 26px; }
+      .bar-gallery, .frame-gallery { grid-template-columns: 1fr 1fr; padding: 1rem; gap: 6px; }
+      .bar-gallery > div:last-child, .frame-gallery > div:last-child { grid-column: span 2; }
+      .bar-gal-item, .frame-gal-item { height: 180px; }
       .bar-grid { grid-template-columns: 1fr; max-width: 100%; }
       .bar-note { margin: 0 0 1rem; }
       .bar-brochure { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
@@ -481,7 +496,7 @@
      ✏️ Pas de navigatielinks aan als je pagina's toevoegt
      ============================================================ -->
 <nav>
-  <a href="#" class="logo serif">BLOOM. <em>by Jana</em></a>
+  <a href="#" class="logo serif">Bloom <em>by Jana</em></a>
   <div class="nav-links">
     <a href="#frame">The Bloom Frame</a>
     <a href="#bar">The Bloom Bar</a>
@@ -499,9 +514,8 @@
      ============================================================ -->
 <div class="hero">
   <div class="hero-img">
-    <!-- 🖼️ VERVANG DIT BLOK door een <img src="foto.jpg" alt="..."> -->
-     <img src="hero-frame.jpg" alt="Bloom by Jana">
-    <div class="img-label">The Bloom Frame</div>
+    <!-- 🖼️ VERVANG DIT BLOK door een <img src="foto.jpg" alt="..." loading="lazy"> -->
+     <img src="hero-frame.jpg" alt="Bloom by Jana" loading="lazy">
   </div>
   <div class="hero-text">
     <!-- ✏️ TAGLINE -->
@@ -510,9 +524,10 @@
     <h1 class="hero-title serif">Bloemen die<br><em>herinneren</em><br>lang na de dag</h1>
     <!-- ✏️ INTROTEKST -->
     <p class="hero-body">Bij Bloom by Jana worden bloemen niet alleen ingezet om de dag te verfraaien — ze bewaren jullie verhaal. Van een persoonlijk bruidsboeket tot een ingelijst kunstwerk dat elke dag opnieuw tot leven komt in huis.</p>
+    <!-- ✏️ Keuzeknoppen tussen de twee diensten -->
     <div class="hero-btns">
-      <button class="btn-primary" onclick="document.getElementById('reserve').scrollIntoView({behavior:'smooth'})">Datum reserveren</button>
-      <button class="btn-ghost" onclick="document.getElementById('frame').scrollIntoView({behavior:'smooth'})">Ontdek de frames</button>
+      <button class="btn-primary" onclick="document.getElementById('frame').scrollIntoView({behavior:'smooth'})">Ontdek The Bloom Frame</button>
+      <button class="btn-ghost" onclick="document.getElementById('bar').scrollIntoView({behavior:'smooth'})">Ontdek The Bloom Bar</button>
     </div>
   </div>
 </div>
@@ -525,16 +540,16 @@
      ============================================================ -->
 <div class="intro-section">
   <div class="intro-img">
-    <!-- 🖼️ VERVANG DIT BLOK door <img src="portret-jana.jpg" alt="Jana"> -->
-    <img src="portret-jana.jpg" alt="Jana">
+    <!-- 🖼️ VERVANG DIT BLOK door <img src="portret-jana.jpg" alt="Jana" loading="lazy"> -->
+    <img src="portret-jana.jpg" alt="Jana" loading="lazy">
   </div>
   <div class="intro-text">
     <span class="eyebrow">Over Bloom by Jana</span>
     <!-- ✏️ TITEL -->
-    <h2 class="serif">Bloemen die <em>gevoel dragen</em></h2>
+    <h2 class="serif">Jullie trouwdag duurt <em>één dag</em>.<br>De bloemen mogen blijven.</h2>
     <!-- ✏️ TEKST — gebruik jouw eigen woorden -->
-    <p>Zin in bloemen die kleur, warmte en een glimlach brengen op jullie grote dag? Bij Bloom zorgen we dat bloemen niet alleen de dag verfraaien, maar ook jullie verhaal bewaren.</p>
-    <p>Van een persoonlijk bruidsboeket tot een volledig bloemenconcept — alles wordt met liefde gemaakt. En het mooiste? Jullie favoriete boeketten kunnen achteraf worden ingelijst, zodat de magie van jullie huwelijksdag elke dag opnieuw tot leven komt in huis.</p>
+    <p>Ik ben Jana, en ik geloof dat bloemen meer kunnen zijn dan decor voor één dag. Daarom geef ik jullie boeket een tweede leven: gedroogd, geperst en met liefde ingelijst tot een kunstwerk dat jullie elke dag opnieuw terugbrengt naar dat ene moment.</p>
+    <p>Of het nu gaat om een ingelijst aandenken of een bloemenbar voor je gasten — alles wordt met evenveel zorg en aandacht gemaakt, in mijn atelier in Pelt.</p>
     <!-- ✏️ HANDTEKENING -->
     <div class="signature">Jana</div>
     <!-- ✏️ E-MAILADRES -->
@@ -544,31 +559,15 @@
 
 
 <!-- ============================================================
-     DIENSTEN OVERZICHT — twee kaarten
-     🖼️ Vervang de fotoplekken door sfeerbeelden
+     SFEERFOTO-ONDERBREKING
+     🖼️ Vervang door een mooie, brede sfeerfoto (bv. bloemen op tafel, detail-shot)
      ============================================================ -->
-<div class="diensten-strip">
-  <div class="dienst-card">
-    <div class="dienst-img">
-      <!-- 🖼️ VERVANG DIT BLOK door <img src="frame-sfeer.jpg" alt="The Bloom Frame"> -->
-      <img src="frame-sfeer.jpg" alt="The Bloom Frame">
-      <div class="dienst-img-label">The Bloom Frame</div>
-    </div>
-    <div class="dienst-title serif">BLOOM. <em>Frame</em></div>
-    <!-- ✏️ TEKST -->
-    <p class="dienst-body">Jouw gedroogde bruidsboeket, prachtig ingelijst als een tijdloos kunstwerk voor aan de muur. Volledig handgemaakt in ons atelier in Pelt.</p>
-    <button class="btn-ghost" onclick="document.getElementById('frame').scrollIntoView({behavior:'smooth'})">Meer info</button>
-  </div>
-  <div class="dienst-card">
-    <div class="dienst-img">
-      <!-- 🖼️ VERVANG DIT BLOK door <img src="bar-sfeer.jpg" alt="The Bloom Bar"> -->
-      <img src="bar-sfeer.jpg" alt="The Bloom Bar">
-      <div class="dienst-img-label">The Bloom Bar</div>
-    </div>
-    <div class="dienst-title serif">The Bloom <em>Bar</em></div>
-    <!-- ✏️ TEKST -->
-    <p class="dienst-body">Een bloemenbar op jullie feest waarbij elke genodigde zijn eigen boeketje samenstelt. Uniek, warm en onvergetelijk als huwelijksbedankje.</p>
-    <button class="btn-ghost" onclick="document.getElementById('bar').scrollIntoView({behavior:'smooth'})">Meer info</button>
+<div class="mood-break">
+  <!-- 🖼️ VERVANG door <img src="sfeerfoto-break.jpg" alt="Bloom by Jana" loading="lazy"> -->
+  <img src="sfeerfoto-break.jpg" alt="Bloom by Jana" loading="lazy">
+  <div class="mood-break-text">
+    <!-- ✏️ CITAAT-TEKST -->
+    <span>Niet elk boeket hoeft te vervagen.<br>Sommige verdienen het om te blijven.</span>
   </div>
 </div>
 
@@ -578,14 +577,35 @@
      ============================================================ -->
 <div id="frame">
 
-  <!-- Intro tekst Frame -->
-  <div class="section" style="background:var(--cream);padding-bottom:1rem">
-    <div class="sec-header">
+  <!-- Hero Frame -->
+  <div class="frame-hero">
+    <div class="frame-hero-img">
+      <!-- 🖼️ VERVANG door <img src="frame-groot.jpg" alt="The Bloom Frame" loading="lazy"> -->
+      <img src="frame-groot.jpg" alt="The Bloom Frame" loading="lazy">
+    </div>
+    <div class="frame-hero-text">
       <span class="eyebrow">The Bloom Frame</span>
       <!-- ✏️ TITEL -->
-      <h2 class="sec-title serif">Jouw bruidsboeket, <em>voor altijd bewaard</em></h2>
-      <!-- ✏️ ONDERTITEL -->
-      <p class="sec-sub">Jouw verse bloemen worden geperst en verwerkt tot een ingelijst kunstwerk. Keuze uit een vlakke inlijsting of shadowbox, in hout (licht eik of donker kers) of aluminium (wit, mat zwart of mat goud).</p>
+      <h2>Eén dag bloeien,<br><em>een leven lang bewaard</em></h2>
+      <!-- ✏️ TEKST -->
+      <p>Jullie verse bruidsboeket verdient meer dan een vaas die na een week leegloopt. We persen en drogen elke bloem met zorg, en lijsten ze in als een tijdloos kunstwerk.</p>
+      <p>Keuze uit een vlakke inlijsting of shadowbox, in hout (licht eik of donker kers) of aluminium (wit, mat zwart of mat goud) — volledig naar jullie smaak.</p>
+    </div>
+  </div>
+
+  <!-- Galerij Frame -->
+  <div class="frame-gallery">
+    <div class="frame-gal-item img-ph">
+      <!-- 🖼️ VERVANG door <img src="frame-detail.jpg" alt="Detail bloemen" loading="lazy"> -->
+      <img src="frame-detail.jpg" alt="Detail bloemen" loading="lazy">
+    </div>
+    <div class="frame-gal-item img-ph">
+      <!-- 🖼️ VERVANG door <img src="frame-interieur.jpg" alt="Frame in interieur" loading="lazy"> -->
+      <img src="frame-interieur.jpg" alt="Frame in interieur" loading="lazy">
+    </div>
+    <div class="frame-gal-item img-ph">
+      <!-- 🖼️ VERVANG door <img src="close-up.jpg" alt="Close-up bloemen" loading="lazy"> -->
+      <img src="close-up.jpg" alt="Close-up bloemen" loading="lazy">
     </div>
   </div>
 
@@ -613,42 +633,6 @@
       <div class="step-desc">Na ±10–12 weken is jouw frame klaar om mee naar huis te nemen.</div>
     </div>
   </div>
-
-  <!-- Galerij Frame -->
-<div class="gal-wrap">
-  <div class="gal-grid">
-    <div class="gal-tall">
-      <!-- 🖼️ GROTE FOTO LINKS — vervang "frame-groot.jpg" door jouw bestandsnaam -->
-      <img src="frame-groot.jpg" alt="A3 frame licht eik">
-      <div class="photo-caption">Vlakke inlijsting — licht eik</div>
-    </div>
-    <div class="gal-stack">
-      <div class="gal-short">
-        <!-- 🖼️ KLEINE FOTO RECHTSBOVEN — vervang "frame-detail.jpg" door jouw bestandsnaam -->
-        <img src="frame-detail.jpg" alt="Detail bloemen">
-      </div>
-      <div class="gal-short">
-        <!-- 🖼️ KLEINE FOTO RECHTSONDER — vervang "frame-interieur.jpg" door jouw bestandsnaam -->
-        <img src="frame-interieur.jpg" alt="Frame in interieur">
-        <div class="photo-caption">Shadowbox — licht eik</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="gal-side">
-  <div class="gal-sq">
-    <!-- 🖼️ KLEINE FOTO ONDERAAN LINKS — vervang "close-up.jpg" door jouw bestandsnaam -->
-    <img src="close-up.jpg" alt="Close-up bloemen">
-  </div>
-  <div class="gal-sq">
-    <!-- 🖼️ KLEINE FOTO ONDERAAN MIDDEN — vervang "frame-a2.jpg" door jouw bestandsnaam -->
-    <img src="frame-a2.jpg" alt="A2 formaat">
-  </div>
-  <div class="gal-sq">
-    <!-- 🖼️ KLEINE FOTO ONDERAAN RECHTS — vervang "shadowbox.jpg" door jouw bestandsnaam -->
-    <img src="shadowbox.jpg" alt="Shadowbox detail">
-  </div>
-</div>
 
   <!-- Prijzen Frame -->
   <div class="section" style="background:var(--peach);border-top:0.5px solid var(--border)">
@@ -759,6 +743,11 @@
         <button class="btn-ghost"><i class="ti ti-download" style="font-size:13px;vertical-align:-1px;margin-right:6px"></i>Download The Bloom Frame (PDF)</button>
       </a>
     </div>
+
+    <!-- ✏️ Reserveer-CTA — springt naar de reservatiekalender en selecteert meteen "The Bloom Frame" -->
+    <div style="text-align:center;margin-top:1.75rem">
+      <button class="btn-primary" onclick="selectService('frame')">Reserveer jouw datum voor The Bloom Frame</button>
+    </div>
   </div>
 
 
@@ -773,12 +762,11 @@
     <h2 class="sec-title serif">Bekijk onze <em>gemaakte frames</em></h2>
     <p class="sec-sub">Beweeg je muis over een foto voor meer info. Elk frame is uniek en volledig op maat gemaakt.</p>
   </div>
-
   <div class="inspiratie-grid">
 
-    <!-- FOTO 1 -->
+    <!-- 🖼️ FOTO 1 — vervang "inspiratie-1.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-1.jpg" alt="Inspiratie 1">
+      <img src="inspiratie-1.jpg" alt="Inspiratie frame 1" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
@@ -788,9 +776,9 @@
       </div>
     </div>
 
-    <!-- FOTO 2 -->
+    <!-- 🖼️ FOTO 2 — vervang "inspiratie-2.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-2.jpg" alt="Inspiratie 2">
+      <img src="inspiratie-2.jpg" alt="Inspiratie frame 2" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Shadowbox</div>
@@ -800,9 +788,9 @@
       </div>
     </div>
 
-    <!-- FOTO 3 -->
+    <!-- 🖼️ FOTO 3 — vervang "inspiratie-3.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-3.jpg" alt="Inspiratie 3">
+      <img src="inspiratie-3.jpg" alt="Inspiratie frame 3" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
@@ -812,21 +800,21 @@
       </div>
     </div>
 
-    <!-- FOTO 4 -->
+    <!-- 🖼️ FOTO 4 — vervang "inspiratie-4.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-4.jpg" alt="Inspiratie 4">
+      <img src="inspiratie-4.jpg" alt="Inspiratie frame 4" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
-          <div class="inspiratie-naam">Licht eik · dubbelzijdig glas</div>
+          <div class="inspiratie-naam">Licht eik · dubbelzijdig glas </div>
           <div class="inspiratie-formaat">A3 formaat</div>
         </div>
       </div>
     </div>
 
-    <!-- FOTO 5 -->
+    <!-- 🖼️ FOTO 5 — vervang "inspiratie-5.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-5.jpg" alt="Inspiratie 5">
+      <img src="inspiratie-5.jpg" alt="Inspiratie frame 5" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
@@ -836,9 +824,9 @@
       </div>
     </div>
 
-    <!-- FOTO 6 -->
+    <!-- 🖼️ FOTO 6 — vervang "inspiratie-6.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-6.jpg" alt="Inspiratie 6">
+      <img src="inspiratie-6.jpg" alt="Inspiratie frame 6" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
@@ -848,9 +836,9 @@
       </div>
     </div>
 
-    <!-- FOTO 7 -->
+    <!-- 🖼️ FOTO 7 — vervang "inspiratie-7.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-7.jpg" alt="Inspiratie 7">
+      <img src="inspiratie-7.jpg" alt="Inspiratie frame 7" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
@@ -860,9 +848,9 @@
       </div>
     </div>
 
-    <!-- FOTO 8 -->
+    <!-- 🖼️ FOTO 8 — vervang "inspiratie-8.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-8.jpg" alt="Inspiratie 8">
+      <img src="inspiratie-8.jpg" alt="Inspiratie frame 8" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Shadowbox</div>
@@ -872,9 +860,9 @@
       </div>
     </div>
 
-    <!-- FOTO 9 -->
+    <!-- 🖼️ FOTO 9 — vervang "inspiratie-9.jpg" + pas naam/formaat aan -->
     <div class="inspiratie-item">
-      <img src="inspiratie-9.jpg" alt="Inspiratie 9">
+      <img src="inspiratie-9.jpg" alt="Inspiratie frame 9" loading="lazy">
       <div class="inspiratie-overlay">
         <div class="inspiratie-info">
           <div class="inspiratie-type">Vlakke inlijsting</div>
@@ -883,9 +871,6 @@
         </div>
       </div>
     </div>
-
-  </div>
-</div>
 
     </div>
 
@@ -912,8 +897,8 @@
   <!-- Hero Bar -->
   <div class="bar-hero">
     <div class="bar-hero-img">
-      <!-- 🖼️ VERVANG door <img src="bar-sfeer.jpg" alt="The Bloom Bar"> -->
-      <img src="bar-sfeer.jpg" alt="The Bloom Bar">
+      <!-- 🖼️ VERVANG door <img src="bar-sfeer.jpg" alt="The Bloom Bar" loading="lazy"> -->
+      <img src="bar-sfeer.jpg" alt="The Bloom Bar" loading="lazy">
     </div>
     <div class="bar-hero-text">
       <span class="eyebrow">The Bloom Bar</span>
@@ -928,16 +913,16 @@
   <!-- Galerij Bar -->
   <div class="bar-gallery">
     <div class="bar-gal-item img-ph">
-      <!-- 🖼️ VERVANG door <img src="bar-foto1.jpg" alt="Bloemenbar"> -->
-      <img src="bar-foto1.jpg" alt="Bloemenbar">
+      <!-- 🖼️ VERVANG door <img src="bar-foto1.jpg" alt="Bloemenbar" loading="lazy"> -->
+      <img src="bar-foto1.jpg" alt="Bloemenbar" loading="lazy">
     </div>
     <div class="bar-gal-item img-ph">
-      <!-- 🖼️ VERVANG door <img src="bar-foto2.jpg" alt="Gasten maken boeketje"> -->
-      <img src="bar-foto3.jpg" alt="Gasten maken boeketje">
+      <!-- 🖼️ VERVANG door <img src="bar-foto2.jpg" alt="Gasten maken boeketje" loading="lazy"> -->
+      <img src="bar-foto3.jpg" alt="Gasten maken boeketje" loading="lazy">
     </div>
     <div class="bar-gal-item img-ph">
-      <!-- 🖼️ VERVANG door <img src="bar-foto3.jpg" alt="Close-up bloemen"> -->
-      <img src="bar-foto5.jpg" alt="Close-up bloemen">
+      <!-- 🖼️ VERVANG door <img src="bar-foto3.jpg" alt="Close-up bloemen" loading="lazy"> -->
+      <img src="bar-foto5.jpg" alt="Close-up bloemen" loading="lazy">
     </div>
   </div>
 
@@ -993,6 +978,11 @@
         <button class="btn-ghost"><i class="ti ti-download" style="font-size:13px;vertical-align:-1px;margin-right:6px"></i>Download The Bloom Bar (PDF)</button>
       </a>
     </div>
+
+    <!-- ✏️ Reserveer-CTA — springt naar de reservatiekalender en selecteert meteen "The Bloom Bar" -->
+    <div style="text-align:center;margin-top:1.75rem">
+      <button class="btn-primary" onclick="selectService('bar')">Reserveer jouw datum voor The Bloom Bar</button>
+    </div>
   </div>
 
 </div><!-- einde #bar -->
@@ -1012,10 +1002,17 @@
       <span class="eyebrow">Reservatie</span>
       <h2 class="sec-title serif">Reserveer <em>jouw trouwdatum</em></h2>
       <!-- ✏️ TEKST RESERVATIE -->
-      <p style="font-size:13px;color:var(--mid);max-width:440px;margin:0.4rem auto 0;line-height:1.8">Kies je datum, vul je gegevens in en kies je frame. Volledige betaling volgt pas bij afhalen — voorschot van €150 bij aflevering boeket.</p>
+      <p style="font-size:13px;color:var(--mid);max-width:440px;margin:0.4rem auto 0;line-height:1.8">Kies je datum, vul je gegevens in en kies je frame. Volledige betaling volgt pas bij afhalen — voorschot van 150euro bij aflevering boeket.</p>
     </div>
 
     <div id="form-area">
+
+      <!-- ✏️ STAP 1 — keuze tussen The Bloom Frame en The Bloom Bar -->
+      <div class="toggle-row" id="dienst-keuze" style="margin-bottom:1.75rem">
+        <button class="toggle-btn" id="dienst-btn-frame" onclick="selectService('frame')">The Bloom Frame</button>
+        <button class="toggle-btn" id="dienst-btn-bar" onclick="selectService('bar')">The Bloom Bar</button>
+      </div>
+
       <div class="cal-box">
         <div class="cal-nav-row">
           <button class="cal-nav-btn" onclick="changeMonth(-1)">&#8592;</button>
@@ -1041,64 +1038,83 @@
 
       <div class="form-row">
         <div><label class="f-label">Voornaam *</label><input class="f-input" type="text" id="fname" placeholder="Jana"></div>
-        <div><label class="f-label">Achternaam</label><input class="f-input" type="text" id="lname" placeholder="De Smet"></div>
+        <div><label class="f-label">Achternaam</label><input class="f-input" type="text" id="lname" placeholder="Coppens"></div>
       </div>
       <div class="form-row">
         <div><label class="f-label">E-mailadres *</label><input class="f-input" type="email" id="email" placeholder="jana@voorbeeld.be"></div>
         <div><label class="f-label">Telefoon</label><input class="f-input" type="tel" id="phone" placeholder="+32 470 00 00 00"></div>
       </div>
 
-      <!-- ✏️ FRAME OPTIES IN HET FORMULIER — pas aan als je nieuwe formaten toevoegt -->
-      <div class="form-group">
-        <label class="f-label">Type frame (optioneel)</label>
-        <select class="f-input">
-          <option value="">— Nog niet beslist —</option>
-          <optgroup label="Vlakke inlijsting">
-            <option>A4 vlak — €215</option>
-            <option>A3 vlak (vol bloemen) — €265</option>
-            <option>A3 vlak (+ geloften/uitnodiging/foto) — €245</option>
-            <option>A2 vlak — €395</option>
-          </optgroup>
-          <optgroup label="Shadowbox">
-            <option>21×21 shadowbox — €245</option>
-            <option>A4 shadowbox — €265</option>
-            <option>A3 shadowbox (vol bloemen) — €295</option>
-            <option>A3 shadowbox (+ geloften/uitnodiging/foto) — €285</option>
-          </optgroup>
-        </select>
-      </div>
-      <div class="form-row">
-        <div>
-          <label class="f-label">Materiaalvoorkeur (optioneel)</label>
-          <select class="f-input">
+      <!-- ✏️ FRAME OPTIES IN HET FORMULIER — verschijnen enkel als "The Bloom Frame" gekozen is -->
+      <div id="frame-opties" style="display:none">
+        <div class="form-group">
+          <label class="f-label">Type frame (optioneel)</label>
+          <select class="f-input" id="frame-keuze">
             <option value="">— Nog niet beslist —</option>
-            <option>Hout — licht eik</option>
-            <option>Hout — donker kers</option>
-            <option>Aluminium — glanzend wit</option>
-            <option>Aluminium — mat zwart</option>
-            <option>Aluminium — mat goud</option>
+            <optgroup label="Vlakke inlijsting">
+              <option>A4 vlak — €215</option>
+              <option>A3 vlak (vol bloemen) — €265</option>
+              <option>A3 vlak (+ geloften/uitnodiging/foto) — €245</option>
+              <option>A2 vlak — €395</option>
+            </optgroup>
+            <optgroup label="Shadowbox">
+              <option>21×21 shadowbox — €245</option>
+              <option>A4 shadowbox — €265</option>
+              <option>A3 shadowbox (vol bloemen) — €295</option>
+              <option>A3 shadowbox (+ geloften/uitnodiging/foto) — €285</option>
+            </optgroup>
           </select>
         </div>
-        <div>
-          <label class="f-label">Dubbelzijdig glas (optioneel)</label>
-          <select class="f-input">
-            <option>Neen</option>
-            <option>Ja (+€25, enkel vlakke inlijsting)</option>
-          </select>
+        <div class="form-row">
+          <div>
+            <label class="f-label">Materiaalvoorkeur (optioneel)</label>
+            <select class="f-input">
+              <option value="">— Nog niet beslist —</option>
+              <option>Hout — licht eik</option>
+              <option>Hout — donker kers</option>
+              <option>Aluminium — glanzend wit</option>
+              <option>Aluminium — mat zwart</option>
+              <option>Aluminium — mat goud</option>
+            </select>
+          </div>
+          <div>
+            <label class="f-label">Dubbelzijdig glas (optioneel)</label>
+            <select class="f-input">
+              <option>Neen</option>
+              <option>Ja (+€25, enkel vlakke inlijsting)</option>
+            </select>
+          </div>
         </div>
       </div>
+
+      <!-- ✏️ BAR OPTIES IN HET FORMULIER — verschijnen enkel als "The Bloom Bar" gekozen is -->
+      <div id="bar-opties" style="display:none">
+        <div class="form-group">
+          <label class="f-label">Geschat aantal gasten (optioneel)</label>
+          <select class="f-input" id="bar-keuze">
+            <option value="">— Nog niet beslist —</option>
+            <option>±25 gasten</option>
+            <option>±50 gasten</option>
+            <option>±75 gasten</option>
+            <option>±100 gasten</option>
+            <option>Meer dan 100 gasten</option>
+          </select>
+        </div>
+        <p style="font-size:12px;color:var(--mid);margin:0.25rem 0 1rem;line-height:1.8">Jana neemt na je reservatie contact op om het bloemenpakket en eventuele extra's (premium mix, kaartjes, florist ter plaatse) samen te bespreken.</p>
+      </div>
+
       <div class="form-group">
         <label class="f-label">Opmerkingen (optioneel)</label>
-        <textarea class="f-input" rows="3" placeholder="Bijv. kleurenpalet boeket, factuur gewenst..."></textarea>
+        <textarea class="f-input" id="notes" rows="3" placeholder="Bijv. kleurenpalet boeket, factuur gewenst..."></textarea>
       </div>
 
       <div class="totaal-bar">
         <div>
-          <div class="totaal-label">Reservatie The Bloom Frame</div>
-          <div class="totaal-note">Voorschot van €150 &nbsp;·&nbsp; volledige betaling bij afhalen van je frame</div>
+          <div class="totaal-label" id="totaal-label">Reservatie The Bloom Frame</div>
+          <div class="totaal-note" id="totaal-note">Voorschot van 150euro &nbsp;·&nbsp; volledige betaling bij afhalen van je frame</div>
         </div>
-        <!-- ✏️ PRIJSBEREIK IN TOTAALBALK -->
-        <div class="totaal-price serif">€215 – €395</div>
+        <!-- ✏️ PRIJSBEREIK IN TOTAALBALK — wordt automatisch aangepast via selectService() -->
+        <div class="totaal-price serif" id="totaal-price">€215 – €395</div>
       </div>
 
       <div class="submit-row">
@@ -1220,7 +1236,7 @@
 
 <footer>
   <div>
-    <div class="footer-logo serif">BLOOM. <em>by Jana</em></div>
+    <div class="footer-logo serif">Bloom <em>by Jana</em></div>
     <!-- ✏️ ADRES / LOCATIE -->
     <div class="footer-sub">Let me capture the beauty of your story<br>Pelt, België</div>
     <!-- ✏️ E-MAILADRES FOOTER -->
@@ -1341,8 +1357,41 @@
     document.getElementById('glas-opt').style.display = type === 'vlak' ? 'flex' : 'none';
   }
 
+  // Keuze tussen The Bloom Frame en The Bloom Bar in het reservatieformulier
+  let gekozenDienst = null;
+
+  function selectService(type) {
+    gekozenDienst = type;
+
+    // Knoppen bijwerken
+    document.getElementById('dienst-btn-frame').classList.toggle('active', type === 'frame');
+    document.getElementById('dienst-btn-bar').classList.toggle('active', type === 'bar');
+
+    // Juiste opties-blok tonen/verbergen
+    document.getElementById('frame-opties').style.display = type === 'frame' ? 'block' : 'none';
+    document.getElementById('bar-opties').style.display = type === 'bar' ? 'block' : 'none';
+
+    // Totaalbalk bijwerken
+    if (type === 'frame') {
+      document.getElementById('totaal-label').textContent = 'Reservatie The Bloom Frame';
+      document.getElementById('totaal-note').textContent = 'Voorschot van 150euro · volledige betaling bij afhalen van je frame';
+      document.getElementById('totaal-price').textContent = '€215 – €395';
+    } else {
+      document.getElementById('totaal-label').textContent = 'Reservatie The Bloom Bar';
+      document.getElementById('totaal-note').textContent = 'Voorschot van 150euro · resterend bedrag in overleg met Jana';
+      document.getElementById('totaal-price').textContent = 'vanaf €325';
+    }
+
+    // Naar de reservatiekalender springen (handig als dit vanuit een prijssectie werd aangeklikt)
+    document.getElementById('reserve').scrollIntoView({behavior:'smooth'});
+  }
+
   // Formulier versturen via Formspree
   async function submitForm() {
+    if (!gekozenDienst) {
+      alert('Kies eerst voor "The Bloom Frame" of "The Bloom Bar".');
+      return;
+    }
     if (!gekozenDatum) {
       alert('Kies eerst een datum op de kalender.');
       return;
@@ -1356,12 +1405,14 @@
 
     // Gegevens verzamelen
     const gegevens = {
+      dienst: gekozenDienst === 'frame' ? 'The Bloom Frame' : 'The Bloom Bar',
       voornaam: voornaam,
       achternaam: document.getElementById('lname').value,
       email: email,
       telefoon: document.getElementById('phone').value,
       trouwdatum: gekozenDatum,
       frame: document.getElementById('frame-keuze') ? document.getElementById('frame-keuze').value : '',
+      gasten_bar: document.getElementById('bar-keuze') ? document.getElementById('bar-keuze').value : '',
       opmerkingen: document.getElementById('notes').value,
       _subject: 'Nieuwe reservatie — Bloom by Jana: ' + gekozenDatum,
       _replyto: email

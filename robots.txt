@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bloombyjana.github.io/bloom_byjana/sitemap.xml
