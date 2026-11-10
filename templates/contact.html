@@ -1,0 +1,19 @@
+{% extends 'base.html' %}{% from 'macros.html' import hero,note %}
+{% block main %}<main id="top">
+{{ hero(p,'Contact','Let’s make your day bloom','linear-gradient(160deg,var(--rose),var(--sage))') }}
+<section class="sec center"><h2 class="lead">{{ p.kop }}</h2><div class="txt">{{ p.tekst|md }}</div><div class="sign">{{ p.handtekening }}</div></section>
+<section class="band center" id="request"><div class="sec">
+<form class="form" id="f" data-dienst="">
+<div class="full"><label for="n">Voornaam en achternaam</label><input id="n" required></div>
+<div><label for="e">E-mailadres</label><input id="e" type="email" required></div>
+<div><label for="p">Telefoonnummer (optioneel)</label><input id="p" type="tel"></div>
+<div><label for="d">Trouwdatum</label><input id="d" type="date"></div>
+<div><label for="l">Locatie van het feest</label><input id="l"></div>
+<div><label for="s">Gewenste dienst</label><select id="s" data-k="Gewenste dienst"><option>The Bloom Frame</option><option>The Bloom Bar</option><option>The Bloom Florals</option><option>Combinatie</option><option>Andere vraag</option></select></div>
+<div><label for="g">Geschat aantal gasten</label><input id="g" type="number" min="1"></div>
+<div class="full"><label for="w">Vertel me meer</label><textarea id="w"></textarea></div>
+{{ note() }}
+<button class="btn" type="submit">Verstuur mijn aanvraag</button></form>
+<p class="thanks" id="ty">Dank je wel! Ik neem snel contact met jullie op.</p>
+<p class="note">{{ s.email }} · {{ s.plaats }}, België</p><a class="insta" href="{{ s.instagram }}">Volg ons op Instagram</a></div></section>
+</main>{% endblock %}

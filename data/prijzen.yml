@@ -1,0 +1,36 @@
+frame:
+  vlak:
+  - naam: A5
+    prijs: 175
+  - naam: A4
+    prijs: 215
+  - naam: A3
+    prijs: 265
+  - naam: A2
+    prijs: 395
+  shadowbox:
+  - naam: 21×21
+    prijs: 245
+  - naam: A4
+    prijs: 265
+  - naam: A3
+    prijs: 295
+  - naam: 30×30
+    prijs: 295
+  glas_extra: 25
+  toevoeging_extra: 20
+  opmerking: 'Alle prijzen incl. 21% btw. Geloften, uitnodiging of foto toevoegen (enkel A3): +€20. Dubbelzijdig glas (enkel vlakke inlijsting): +€25.'
+bar:
+  verhuur_naam: Verhuur bloemenbar
+  verhuur_prijs: 325
+  verhuur_omschrijving: Incl. stand, vaasjes, op- en afbouw en voorbereiding bloemen
+  pakketten:
+  - naam: 25 gasten
+    prijs: 135
+  - naam: 50 gasten
+    prijs: 275
+  - naam: 75 gasten
+    prijs: 415
+  - naam: 100 gasten
+    prijs: 550
+  opmerking: 'Per pakket ±3 à 5 bloemen per persoon. Optioneel: premium bloemenmix (pioenen, dahlia’s…) vanaf €75, persoonlijk kaartje of lint vanaf €1,50 per gast, florist ter plaatse op aanvraag. Buiten 10 km van Pelt: +€0,75/km. Prijzen afhankelijk van seizoen en beschikbaarheid.'

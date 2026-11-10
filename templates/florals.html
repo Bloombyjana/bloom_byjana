@@ -1,0 +1,20 @@
+{% extends 'base.html' %}{% from 'macros.html' import hero,steps,gallery,note,img %}
+{% block main %}<main id="top">
+{{ hero(p,'The Bloom Experience','The Bloom Florals','linear-gradient(160deg,var(--accent),var(--peach))') }}
+<section class="sec center"><h2 class="lead">{{ p.intro_kop }}</h2><div class="txt">{{ p.intro|md }}</div></section>
+<section class="sec"><div class="cats">{% for c in D.categorieen %}<div class="cat"><div class="ph">{{ img(c.foto,c.naam) }}</div><h3>{{ c.naam }}</h3><p>{{ c.tekst }}</p></div>{% endfor %}</div></section>
+<section class="band"><div class="sec"><div class="eyebrow">01</div><h2 class="t">The process</h2>{{ steps(D.stappen.florals) }}</div></section>
+{% if D.galerij.florals %}<section class="sec"><div class="eyebrow">02</div><h2 class="t">Bloom inspiration</h2>{{ gallery(D.galerij.florals) }}</section>{% endif %}
+{% if D.reviews %}<section class="sec" style="max-width:800px"><div class="eyebrow">03</div><h2 class="t">Reviews</h2>{% for r in D.reviews %}<div class="quote">{{ r.tekst }}<small>{{ r.naam }}</small></div><br>{% endfor %}</section>{% endif %}
+<section class="band center" id="request"><div class="sec"><h2 class="lead">{{ p.afsluit_kop }}</h2><div class="txt"><p>{{ p.afsluit_tekst }}</p></div>
+<form class="form" id="f" data-dienst="The Bloom Florals">
+<div class="full"><label for="n">Voornaam en achternaam</label><input id="n" required></div>
+<div><label for="e">E-mailadres</label><input id="e" type="email" required></div>
+<div><label for="p">Telefoonnummer (optioneel)</label><input id="p" type="tel"></div>
+<div><label for="d">Trouwdatum</label><input id="d" type="date" required></div>
+<div><label for="l">Locatie van het feest</label><input id="l"></div>
+<div class="full"><label for="w">Jullie bloemenwensen</label><textarea id="w"></textarea></div>
+{{ note() }}
+<button class="btn" type="submit">Tell me about your wedding</button></form>
+<p class="thanks" id="ty">Dank je wel! Ik neem snel contact met jullie op.</p></div></section>
+</main>{% endblock %}

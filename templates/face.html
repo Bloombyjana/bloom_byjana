@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% from 'macros.html' import hero,gallery,img %}
+{% block main %}<main id="top">
+{{ hero(p,'BLOOM by Jana','The Face Behind Bloom','linear-gradient(160deg,var(--peach),var(--cream))') }}
+<section class="sec"><div class="two"><div class="portrait">{{ img(p.portret_foto,p.portret_alt) }}</div>
+<div><h2 class="lead">{{ p.kop }}</h2><div class="txt">{{ p.tekst|md }}</div><div class="sign">{{ p.handtekening }}</div></div></div></section>
+{% if D.galerij.face %}<section class="band"><div class="sec">{{ gallery(D.galerij.face) }}</div></section>{% endif %}
+<section class="sec center"><h2 class="lead">Ready to make your day bloom?</h2><a class="btn" href="/contact/">Let’s talk!</a></section>
+</main>{% endblock %}

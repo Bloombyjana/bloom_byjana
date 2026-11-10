@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ title }}</title>
+<meta name="description" content="{{ desc }}">
+<link rel="canonical" href="{{ base }}{{ page.url }}">
+{% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
+<meta name="theme-color" content="#F6F1EA">
+<meta property="og:type" content="website"><meta property="og:site_name" content="{{ s.naam }}"><meta property="og:locale" content="nl_BE">
+<meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ desc }}"><meta property="og:url" content="{{ base }}{{ page.url }}">
+<meta property="og:image" content="{{ base }}{{ og_image }}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{{ base }}{{ og_image }}">
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+{% if ld %}<script type="application/ld+json">{{ ld|safe }}</script>{% endif %}
+</head>
+<body data-fs="{{ s.formspree_url }}" data-gs="{{ s.script_url }}">
+<header>
+<a class="logo" href="/">BLOOM <span style="color:var(--accent)">by Jana</span></a>
+<button class="menu-btn" id="mb" aria-label="Menu openen" aria-expanded="false" aria-controls="menu"><span class="bars"></span></button>
+<nav id="menu" aria-label="Hoofdmenu">
+<button class="close" id="mc" aria-label="Menu sluiten">✕</button>
+<a href="/">home</a>
+<a href="/#experience">the bloom experience</a>
+<a class="sub" href="/the-bloom-frame/">The Bloom Frame</a>
+<a class="sub" href="/the-bloom-bar/">The Bloom Bar</a>
+<a class="sub" href="/the-bloom-florals/">The Bloom Florals</a>
+<a href="/the-face-behind-bloom/">the face behind bloom</a>
+<a href="/contact/">contact</a>
+</nav>
+</header>
+{% block main %}{% endblock %}
+<footer><div><a href="{{ s.instagram }}">Instagram</a><a href="/privacy/">Privacybeleid</a></div><div>{{ s.plaats }}, België · From the first flower to the last memory.</div></footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

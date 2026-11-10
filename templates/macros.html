@@ -1,0 +1,8 @@
+{% macro img(src,alt,eager=False) %}{% if src %}<img src="{{ src }}" alt="{{ alt }}"{% if not eager %} loading="lazy"{% endif %} onerror="this.remove()">{% endif %}{% endmacro %}
+{% macro hero(p,eyebrow,titel,bg='') %}<section class="fhero"><div class="fbg"{% if bg %} style="background:{{ bg }}"{% endif %}>{{ img(p.hero_foto,p.hero_alt,True) }}</div><div class="ftitle"><div class="eyebrow">{{ eyebrow }}</div><h1>{{ titel }}</h1></div></section>{% endmacro %}
+{% macro steps(items) %}{% if items %}<div class="{{ 'grid3' if items|length==3 else 'grid4' }}">{% for x in items %}<div class="step"><div class="ph">{{ img(x.foto,x.titel) }}</div><div class="num">{{ loop.index }}</div><h3>{{ x.titel }}</h3><p>{{ x.tekst }}</p></div>{% endfor %}</div>{% endif %}{% endmacro %}
+{% macro gallery(items) %}{% if items %}<div class="gal">{% for g in items %}<div class="ph">{{ img(g.foto,g.alt) }}</div>{% endfor %}</div>{% endif %}{% endmacro %}
+{% macro faq(items) %}{% for q in items %}<details><summary>{{ q.vraag }}</summary><p>{{ q.antwoord }}</p></details>
+{% endfor %}{% endmacro %}
+{% macro price(titel,eur,sub='') %}<div class="price"><h3>{{ titel }}</h3><div class="eur">€{{ eur }}</div>{% if sub %}<p>{{ sub }}</p>{% endif %}</div>{% endmacro %}
+{% macro note() %}<p class="full note" style="margin:0;text-align:left">Door te verzenden ga je akkoord met het <a href="/privacy/">privacybeleid</a>.</p>{% endmacro %}

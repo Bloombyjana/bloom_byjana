@@ -1,0 +1,9 @@
+@font-face{font-family:'Cormorant';font-weight:500;font-style:normal;font-display:swap;src:url(/assets/fonts/cormorant-500.woff) format('woff')}
+@font-face{font-family:'Cormorant';font-weight:500;font-style:italic;font-display:swap;src:url(/assets/fonts/cormorant-500-italic.woff) format('woff')}
+@font-face{font-family:'Cormorant';font-weight:600;font-style:normal;font-display:swap;src:url(/assets/fonts/cormorant-600.woff) format('woff')}
+@font-face{font-family:'Montserrat';font-weight:400;font-style:normal;font-display:swap;src:url(/assets/fonts/montserrat-400.woff) format('woff')}
+@font-face{font-family:'Montserrat';font-weight:500;font-style:normal;font-display:swap;src:url(/assets/fonts/montserrat-500.woff) format('woff')}
+@font-face{font-family:'Caveat';font-weight:400;font-style:normal;font-display:swap;src:url(/assets/fonts/caveat-400.woff) format('woff')}
+/* The Seasons: koop of activeer de volledige licentie en zet de bestanden in assets/fonts/. Haal dan dit commentaar weg:
+@font-face{font-family:'The Seasons';font-weight:400;font-style:normal;font-display:swap;src:url(/assets/fonts/the-seasons-regular.woff2) format('woff2')}
+(De demoversie die je uploadde bevat geen accenten, geen euroteken en geen schuine apostrof en mag niet commercieel gebruikt worden.) */

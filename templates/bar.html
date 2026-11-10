@@ -1,0 +1,26 @@
+{% extends 'base.html' %}{% from 'macros.html' import hero,steps,gallery,faq,price,note %}
+{% set pr=D.prijzen.bar %}
+{% block main %}<main id="top">
+{{ hero(p,'The Bloom Experience','The Bloom Bar','linear-gradient(160deg,var(--sage),var(--cream))') }}
+<section class="sec center"><h2 class="lead">{{ p.intro_kop }}</h2><div class="txt">{{ p.intro|md }}</div></section>
+<section class="sec"><div class="eyebrow">01</div><h2 class="t">The experience</h2>{{ steps(D.stappen.bar) }}</section>
+{% if D.galerij.bar %}<section class="band"><div class="sec"><div class="eyebrow">02</div><h2 class="t">The setup</h2>{{ gallery(D.galerij.bar) }}</div></section>{% endif %}
+{% if p.bloemen_tekst %}<section class="sec center"><div class="eyebrow">03</div><h2 class="t">The flowers</h2><div class="txt"><p>{{ p.bloemen_tekst }}</p></div></section>{% endif %}
+{% if p.details_tekst %}<section class="sec center"><div class="eyebrow">04</div><h2 class="t">The details</h2><div class="txt"><p>{{ p.details_tekst }}</p></div></section>{% endif %}
+<section class="sec" id="pricing"><div class="eyebrow">05</div><h2 class="t">Pricing &amp; packages</h2>
+<div style="max-width:380px;margin:0 auto 20px">{{ price(pr.verhuur_naam,pr.verhuur_prijs,pr.verhuur_omschrijving) }}</div>
+<h3 class="sub3">Bloemenpakketten</h3><div class="grid4">{% for x in pr.pakketten %}{{ price(x.naam,x.prijs) }}{% endfor %}</div>
+<p class="note">{{ pr.opmerking }}<br><a href="{{ s.brochure_bar }}">Download The Bloom Bar (PDF)</a></p></section>
+{% if D.faq.bar %}<section class="sec" id="faq" style="max-width:800px"><div class="eyebrow">06</div><h2 class="t">FAQ</h2>{{ faq(D.faq.bar) }}</section>{% endif %}
+<section class="band center" id="request"><div class="sec"><h2 class="lead">{{ p.afsluit_kop }}</h2><div class="txt"><p>{{ p.afsluit_tekst }}</p></div>
+<form class="form" id="f" data-dienst="The Bloom Bar">
+<div class="full"><label for="n">Voornaam en achternaam</label><input id="n" required></div>
+<div><label for="e">E-mailadres</label><input id="e" type="email" required></div>
+<div><label for="d">Trouwdatum</label><input id="d" type="date" required></div>
+<div><label for="l">Locatie van het feest</label><input id="l"></div>
+<div><label for="g">Aantal gasten</label><input id="g" type="number" min="1"></div>
+<div class="full"><label for="w">Wensen of opties</label><textarea id="w"></textarea></div>
+{{ note() }}
+<button class="btn" type="submit">Request your Bloom Bar</button></form>
+<p class="thanks" id="ty">Dank je wel! Ik neem snel contact met jullie op.</p></div></section>
+</main>{% endblock %}

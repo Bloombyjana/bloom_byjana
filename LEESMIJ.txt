@@ -1,0 +1,41 @@
+BLOOM by Jana — website met beheerscherm
+=========================================
+
+OVERZICHT
+- data/        alle teksten, prijzen, FAQ, stappen en fotogalerijen (dit pas je aan via het beheerscherm)
+- templates/   de opbouw van de pagina's
+- assets/      stijl, lettertypes en foto's (assets/img)
+- build.py     bouwt de site; draait automatisch bij elke wijziging (GitHub Actions)
+- .pages.yml   instellingen van het beheerscherm (Pages CMS)
+- google-apps-script/bevestigingsmail.gs   automatische bevestigingsmail
+
+EENMALIGE INSTALLATIE
+1. Zet alle bestanden in je GitHub-repository (op de hoofdtak, "main").
+2. GitHub > Settings > Pages > Source: kies "GitHub Actions". Het eerste bouwen duurt ongeveer een minuut.
+3. Laat bloom-frame-brochure.pdf, bloom-bar-brochure.pdf en favicon.png in de map public/ staan (zet ze er anders in).
+4. Zet je foto's in assets/img/ (zie assets/img/LEESMIJ.txt) of upload ze via het beheerscherm.
+
+VISUEEL BEHEERSCHERM (Pages CMS)
+1. Ga naar pagescms.org en log in met GitHub.
+2. Installeer de Pages CMS GitHub App op je repository en open die.
+3. Je ziet lijsten zoals "Prijzen", "Teksten en hoofdfoto's", "Fotogalerijen" en "Reviews van koppels".
+4. Pas aan, kies Opslaan: de wijziging staat na ongeveer een minuut live.
+Een foto toevoegen aan een galerij: Fotogalerijen > kies de galerij > "Voeg toe" > foto uploaden + beschrijving typen.
+Controleer de actuele voorwaarden van Pages CMS op pagescms.org.
+
+AUTOMATISCHE BEVESTIGINGSMAIL (Google)
+1. Open je Google Apps Script (het project achter je huidige reservatie-Sheet).
+2. Vervang de code door google-apps-script/bevestigingsmail.gs.
+3. Kies de functie "test" en klik op Uitvoeren. Geef toestemming. Je krijgt een testmail.
+4. Implementeren > Implementaties beheren > potlood > Versie: nieuwe versie > Implementeren.
+   (Uitvoeren als: jij. Toegang: iedereen.) Het adres blijft hetzelfde als in data/site.yml.
+5. Klanten krijgen dan na elk formulier een bevestiging. Je blijft ook de Formspree-mail krijgen.
+Beperkingen: een gratis Google-account mag maar een beperkt aantal mails per dag sturen; het script stopt zelf bij 80 per dag.
+
+LETTERTYPES
+- Titels: Cormorant. Tekst: Montserrat. Beide staan op je eigen site (assets/fonts).
+- Handschrift: Caveat, ook op je eigen site. Er worden geen lettertypes meer van Google geladen.
+- The Seasons: de demoversie mag niet commercieel gebruikt worden en mist accenten en het euroteken. Zet de volledige gelicentieerde bestanden in assets/fonts en haal het commentaar weg in assets/fonts.css.
+
+PRIVACYBELEID
+Concept in templates/privacy.html. Vul de bewaartermijn in en laat het nakijken.
