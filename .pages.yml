@@ -1,0 +1,483 @@
+media:
+  input: assets/img
+  output: /assets/img
+content:
+- name: paginas
+  label: Teksten en hoofdfoto’s
+  type: file
+  path: data/paginas.yml
+  fields:
+  - name: home
+    label: Startpagina
+    type: object
+    fields:
+    - name: titel
+      label: Titel in Google (SEO)
+      type: string
+    - name: beschrijving
+      label: Beschrijving in Google (SEO)
+      type: text
+    - name: hero_fotos
+      label: Vier openingsfoto’s
+      type: object
+      fields:
+      - name: foto
+        label: Foto
+        type: image
+      - name: alt
+        label: Beschrijving van de foto
+        type: string
+      list: true
+    - name: intro
+      label: Introductie
+      type: text
+    - name: jana_tekst
+      label: Tekst over Jana
+      type: text
+    - name: cta_tekst
+      label: Tekst bij afsluiter
+      type: text
+  - name: frame
+    label: The Bloom Frame
+    type: object
+    fields:
+    - name: titel
+      label: Titel in Google (SEO)
+      type: string
+    - name: beschrijving
+      label: Beschrijving in Google (SEO)
+      type: text
+    - name: hero_foto
+      label: Hoofdfoto
+      type: image
+    - name: hero_alt
+      label: Beschrijving hoofdfoto
+      type: string
+    - name: intro_kop
+      label: Kop introductie
+      type: string
+    - name: intro
+      label: Introductie
+      type: text
+    - name: toevoeging_tekst
+      label: Tekst “Made to remember”
+      type: text
+    - name: afsluit_kop
+      label: Kop boven reservatie
+      type: string
+    - name: afsluit_tekst
+      label: Tekst boven reservatie
+      type: text
+  - name: bar
+    label: The Bloom Bar
+    type: object
+    fields:
+    - name: titel
+      label: Titel in Google (SEO)
+      type: string
+    - name: beschrijving
+      label: Beschrijving in Google (SEO)
+      type: text
+    - name: hero_foto
+      label: Hoofdfoto
+      type: image
+    - name: hero_alt
+      label: Beschrijving hoofdfoto
+      type: string
+    - name: intro_kop
+      label: Kop introductie
+      type: string
+    - name: intro
+      label: Introductie
+      type: text
+    - name: bloemen_tekst
+      label: Tekst “The flowers”
+      type: text
+    - name: details_tekst
+      label: Tekst “The details”
+      type: text
+    - name: afsluit_kop
+      label: Kop boven aanvraag
+      type: string
+    - name: afsluit_tekst
+      label: Tekst boven aanvraag
+      type: text
+  - name: florals
+    label: The Bloom Florals
+    type: object
+    fields:
+    - name: titel
+      label: Titel in Google (SEO)
+      type: string
+    - name: beschrijving
+      label: Beschrijving in Google (SEO)
+      type: text
+    - name: hero_foto
+      label: Hoofdfoto
+      type: image
+    - name: hero_alt
+      label: Beschrijving hoofdfoto
+      type: string
+    - name: intro_kop
+      label: Kop introductie
+      type: string
+    - name: intro
+      label: Introductie
+      type: text
+    - name: afsluit_kop
+      label: Kop boven aanvraag
+      type: string
+    - name: afsluit_tekst
+      label: Tekst boven aanvraag
+      type: text
+  - name: face
+    label: The Face Behind Bloom
+    type: object
+    fields:
+    - name: titel
+      label: Titel in Google (SEO)
+      type: string
+    - name: beschrijving
+      label: Beschrijving in Google (SEO)
+      type: text
+    - name: hero_foto
+      label: Hoofdfoto
+      type: image
+    - name: hero_alt
+      label: Beschrijving hoofdfoto
+      type: string
+    - name: portret_foto
+      label: Portretfoto
+      type: image
+    - name: portret_alt
+      label: Beschrijving portretfoto
+      type: string
+    - name: kop
+      label: Kop
+      type: string
+    - name: tekst
+      label: Tekst
+      type: text
+    - name: handtekening
+      label: Handtekening
+      type: string
+  - name: contact
+    label: Contact
+    type: object
+    fields:
+    - name: titel
+      label: Titel in Google (SEO)
+      type: string
+    - name: beschrijving
+      label: Beschrijving in Google (SEO)
+      type: text
+    - name: hero_foto
+      label: Hoofdfoto
+      type: image
+    - name: hero_alt
+      label: Beschrijving hoofdfoto
+      type: string
+    - name: kop
+      label: Kop
+      type: string
+    - name: tekst
+      label: Tekst
+      type: text
+    - name: handtekening
+      label: Handtekening
+      type: string
+- name: prijzen
+  label: Prijzen
+  type: file
+  path: data/prijzen.yml
+  fields:
+  - name: frame
+    label: The Bloom Frame
+    type: object
+    fields:
+    - name: vlak
+      label: Vlakke inlijsting
+      type: object
+      fields:
+      - name: naam
+        label: Formaat
+        type: string
+      - name: prijs
+        label: Prijs (€)
+        type: number
+      list: true
+    - name: shadowbox
+      label: Shadowbox
+      type: object
+      fields:
+      - name: naam
+        label: Formaat
+        type: string
+      - name: prijs
+        label: Prijs (€)
+        type: number
+      list: true
+    - name: glas_extra
+      label: Dubbelzijdig glas (+€)
+      type: number
+    - name: toevoeging_extra
+      label: Persoonlijke toevoeging (+€)
+      type: number
+    - name: opmerking
+      label: Opmerking onder de prijzen
+      type: text
+  - name: bar
+    label: The Bloom Bar
+    type: object
+    fields:
+    - name: verhuur_naam
+      label: Naam verhuur
+      type: string
+    - name: verhuur_prijs
+      label: Prijs verhuur (€)
+      type: number
+    - name: verhuur_omschrijving
+      label: Omschrijving verhuur
+      type: string
+    - name: pakketten
+      label: Bloemenpakketten
+      type: object
+      fields:
+      - name: naam
+        label: Formaat
+        type: string
+      - name: prijs
+        label: Prijs (€)
+        type: number
+      list: true
+    - name: opmerking
+      label: Opmerking onder de prijzen
+      type: text
+- name: faq
+  label: Veelgestelde vragen
+  type: file
+  path: data/faq.yml
+  fields:
+  - name: frame
+    label: The Bloom Frame
+    type: object
+    fields:
+    - name: vraag
+      label: Vraag
+      type: string
+    - name: antwoord
+      label: Antwoord
+      type: text
+    list: true
+  - name: bar
+    label: The Bloom Bar
+    type: object
+    fields:
+    - name: vraag
+      label: Vraag
+      type: string
+    - name: antwoord
+      label: Antwoord
+      type: text
+    list: true
+  - name: florals
+    label: The Bloom Florals
+    type: object
+    fields:
+    - name: vraag
+      label: Vraag
+      type: string
+    - name: antwoord
+      label: Antwoord
+      type: text
+    list: true
+- name: stappen
+  label: Stappen en uitleg
+  type: file
+  path: data/stappen.yml
+  fields:
+  - name: frame
+    label: 'Frame: the process'
+    type: object
+    fields:
+    - name: titel
+      label: Titel
+      type: string
+    - name: tekst
+      label: Tekst
+      type: text
+    - name: foto
+      label: Foto (optioneel)
+      type: image
+    list: true
+  - name: frame_stijl
+    label: 'Frame: your frame, your style'
+    type: object
+    fields:
+    - name: titel
+      label: Titel
+      type: string
+    - name: tekst
+      label: Tekst
+      type: text
+    - name: foto
+      label: Foto (optioneel)
+      type: image
+    list: true
+  - name: bar
+    label: 'Bar: the experience'
+    type: object
+    fields:
+    - name: titel
+      label: Titel
+      type: string
+    - name: tekst
+      label: Tekst
+      type: text
+    - name: foto
+      label: Foto (optioneel)
+      type: image
+    list: true
+  - name: florals
+    label: 'Florals: the process'
+    type: object
+    fields:
+    - name: titel
+      label: Titel
+      type: string
+    - name: tekst
+      label: Tekst
+      type: text
+    - name: foto
+      label: Foto (optioneel)
+      type: image
+    list: true
+- name: categorieen
+  label: 'Florals: de vier categorieën'
+  type: file
+  path: data/categorieen.yml
+  list: true
+  fields:
+  - name: naam
+    label: Naam
+    type: string
+  - name: tekst
+    label: Tekst
+    type: text
+  - name: foto
+    label: Foto
+    type: image
+- name: diensten
+  label: 'Startpagina: de drie diensten'
+  type: file
+  path: data/diensten.yml
+  list: true
+  fields:
+  - name: naam
+    label: Naam
+    type: string
+  - name: tekst
+    label: Tekst
+    type: text
+  - name: link
+    label: Link
+    type: string
+  - name: foto
+    label: Foto
+    type: image
+  - name: alt
+    label: Beschrijving foto
+    type: string
+- name: galerij
+  label: Fotogalerijen
+  type: file
+  path: data/galerij.yml
+  fields:
+  - name: frame
+    label: Bloom Frame
+    type: object
+    fields:
+    - name: foto
+      label: Foto
+      type: image
+    - name: alt
+      label: Beschrijving van de foto
+      type: string
+    list: true
+  - name: bar
+    label: Bloom Bar
+    type: object
+    fields:
+    - name: foto
+      label: Foto
+      type: image
+    - name: alt
+      label: Beschrijving van de foto
+      type: string
+    list: true
+  - name: florals
+    label: Bloom Florals
+    type: object
+    fields:
+    - name: foto
+      label: Foto
+      type: image
+    - name: alt
+      label: Beschrijving van de foto
+      type: string
+    list: true
+  - name: face
+    label: The Face Behind Bloom
+    type: object
+    fields:
+    - name: foto
+      label: Foto
+      type: image
+    - name: alt
+      label: Beschrijving van de foto
+      type: string
+    list: true
+- name: reviews
+  label: Reviews van koppels
+  type: file
+  path: data/reviews.yml
+  list: true
+  fields:
+  - name: naam
+    label: Naam koppel
+    type: string
+  - name: tekst
+    label: Reactie
+    type: text
+- name: site
+  label: Algemeen (e-mail, Instagram, koppelingen)
+  type: file
+  path: data/site.yml
+  fields:
+  - name: naam
+    label: Naam
+    type: string
+  - name: omschrijving
+    label: Korte omschrijving
+    type: text
+  - name: email
+    label: E-mailadres
+    type: string
+  - name: instagram
+    label: Instagram-link
+    type: string
+  - name: plaats
+    label: Plaats
+    type: string
+  - name: brochure_frame
+    label: Link brochure Frame
+    type: string
+  - name: brochure_bar
+    label: Link brochure Bar
+    type: string
+  - name: formspree_url
+    label: Formspree-adres
+    type: string
+  - name: script_url
+    label: Google Script-adres (bevestigingsmail)
+    type: string
