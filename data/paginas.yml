@@ -1,96 +1,155 @@
 home:
   titel: BLOOM by Jana | Persoonlijke trouwbloemen, bloemenbar & bloemenframe
-  beschrijving: 'BLOOM by Jana: persoonlijke trouwbloemen, een bloemenbar voor je gasten en bruidsboeketten bewaard in een bloemenframe. Your day. Your flowers. Your story.'
+  beschrijving: "BLOOM by Jana: persoonlijke trouwbloemen, een bloemenbar voor je
+    gasten en bruidsboeketten bewaard in een bloemenframe. Your day. Your
+    flowers. Your story."
   hero_fotos:
-  - foto: /assets/img/hero-frame.jpg
-    alt: Bruidsboeket bewaard in een bloemenframe
-  - foto: /assets/img/close-up.jpg
-    alt: Close-up van bruidsbloemen
-  - foto: /assets/img/bar-sfeer.jpg
-    alt: 'The Bloom Bar: bloemenbar op een trouwfeest'
-  - foto: /assets/img/sfeerfoto-break.jpg
-    alt: Jana aan het werk met bloemen
-  intro: Persoonlijke trouwbloemen en bloemenbelevingen. Samen creëren we een bloemenverhaal dat helemaal bij jullie past.
-  jana_tekst: Hi, ik ben Jana! Het gezicht achter BLOOM by Jana. Met een grote liefde voor bloemen, mooie details en persoonlijke verhalen help ik jullie om van jullie trouwdag iets bijzonders te maken.
-  cta_tekst: Hebben jullie trouwplannen en dromen jullie van bloemen die helemaal bij jullie passen? Ik denk graag met jullie mee.
+    - foto: /assets/img/Bloom by Jana - Lynn Van Baelen Photography-109.jpg
+      alt: Bruidsboeket bewaard in een bloemenframe
+    - foto: /assets/img/Bloom by Jana - Lynn Van Baelen Photography-119.jpg
+      alt: Close-up van bruidsbloemen
+    - foto: /assets/img/Jana & Yordi - Huwelijk 2026 - Lynn Van Baelen-6-1.jpg
+      alt: "The Bloom Bar: bloemenbar op een trouwfeest"
+    - foto: /assets/img/Bloom by Jana - Lynn Van Baelen Photography-103.jpg
+      alt: Jana aan het werk met bloemen
+  intro: Persoonlijke trouwbloemen en bloemenbelevingen. Samen creëren we een
+    bloemenverhaal dat helemaal bij jullie past.
+  jana_tekst: Hi, ik ben Jana! Het gezicht achter BLOOM by Jana. Met een grote
+    liefde voor bloemen, mooie details en persoonlijke verhalen help ik jullie
+    om van jullie trouwdag iets bijzonders te maken.
+  cta_tekst: Hebben jullie trouwplannen en dromen jullie van bloemen die helemaal
+    bij jullie passen? Ik denk graag met jullie mee.
 frame:
   titel: The Bloom Frame | Bruidsboeket bewaren | BLOOM by Jana
-  beschrijving: 'The Bloom Frame: laat jullie bruidsboeket drogen, persen en bewaren in een uniek bloemenkunstwerk. Reserveer jullie trouwdatum.'
-  hero_foto: /assets/img/frame-groot.jpg
-  hero_alt: 'The Bloom Frame: afgewerkt bloemenframe'
+  beschrijving: "The Bloom Frame: laat jullie bruidsboeket drogen, persen en
+    bewaren in een uniek bloemenkunstwerk. Reserveer jullie trouwdatum."
+  hero_foto: /assets/img/Bloom by Jana - Lynn Van Baelen Photography-111.jpg
+  hero_alt: "The Bloom Frame: afgewerkt bloemenframe"
   intro_kop: Some moments deserve to last forever.
-  intro: |-
-    Jullie trouwdag zit vol kleine en grote momenten die je voor altijd wilt koesteren. Het bruidsboeket is daar misschien wel één van de mooiste herinneringen aan.
+  intro: >-
+    Jullie trouwdag zit vol kleine en grote momenten die je voor altijd wilt
+    koesteren. Het bruidsboeket is daar misschien wel één van de mooiste
+    herinneringen aan.
 
-    Met The Bloom Frame geef je die bloemen een tweede leven. Ik droog en pers jullie bloemen met zorg en verwerk ze tot een uniek kunstwerk, helemaal afgestemd op jullie smaak.
 
-    Zo wordt een boeket dat één dag straalt, een herinnering die elke dag opnieuw mag bloeien.
-  toevoeging_tekst: Geloften, een uitnodiging of een foto kunnen mee in het frame. Dat kan bij een A3-formaat.
+    Met The Bloom Frame geef je die bloemen een tweede leven. Ik droog en pers
+    jullie bloemen met zorg en verwerk ze tot een uniek kunstwerk, helemaal
+    afgestemd op jullie smaak.
+
+
+    Zo wordt een boeket dat één dag straalt, een herinnering die elke dag
+    opnieuw mag bloeien.
+  toevoeging_tekst: Geloften, een uitnodiging of een foto kunnen mee in het frame.
+    Dat kan bij een A3-formaat.
   afsluit_kop: Your flowers. Your memories. Forever in bloom.
-  afsluit_tekst: Vul het formulier in en ik bevestig jullie reservatie persoonlijk. Voorschot van €150 bij aflevering van het boeket, volledige betaling bij afhalen.
+  afsluit_tekst: Vul het formulier in en ik bevestig jullie reservatie
+    persoonlijk. Voorschot van €150 bij aflevering van het boeket, volledige
+    betaling bij afhalen.
 bar:
   titel: The Bloom Bar | Bloemenbar voor je trouwfeest | BLOOM by Jana
-  beschrijving: 'The Bloom Bar: een interactieve bloemenbar waar trouwgasten zelf een boeketje samenstellen en mee naar huis nemen. Vraag jullie Bloom Bar aan.'
-  hero_foto: /assets/img/bar-sfeer.jpg
-  hero_alt: 'The Bloom Bar: bloemenbar op een trouwfeest'
+  beschrijving: "The Bloom Bar: een interactieve bloemenbar waar trouwgasten zelf
+    een boeketje samenstellen en mee naar huis nemen. Vraag jullie Bloom Bar
+    aan."
+  hero_foto: /assets/img/Jana & Yordi - Huwelijk 2026 - Lynn Van Baelen-3.jpg
+  hero_alt: "The Bloom Bar: bloemenbar op een trouwfeest"
   intro_kop: Let love bloom, one bouquet at a time.
-  intro: |-
+  intro: >-
     Op zoek naar een originele en fleurige toevoeging aan jullie trouwfeest?
 
-    The Bloom Bar brengt bloemen en beleving samen. Een sfeervolle bloemenbar waar jullie gasten zelf hun favoriete bloemen kunnen kiezen en een klein boeketje kunnen samenstellen om mee naar huis te nemen.
 
-    Een gezellig moment tijdens jullie feest, een leuke activiteit voor jong en oud en vooral een origineel bedankje dat nog even blijft nazinderen.
-  bloemen_tekst: Kies uit een standaard bloemenmix of een premium mix met bijvoorbeeld pioenen en dahlia’s. De mixen en kleuren verschillen per seizoen.
-  details_tekst: Gepersonaliseerde lintjes, kaartjes en extra’s maken de bloemenbar helemaal van jullie.
+    The Bloom Bar brengt bloemen en beleving samen. Een sfeervolle bloemenbar
+    waar jullie gasten zelf hun favoriete bloemen kunnen kiezen en een klein
+    boeketje kunnen samenstellen om mee naar huis te nemen.
+
+
+    Een gezellig moment tijdens jullie feest, een leuke activiteit voor jong en
+    oud en vooral een origineel bedankje dat nog even blijft nazinderen.
+  bloemen_tekst: Kies uit een standaard bloemenmix of een premium mix met
+    bijvoorbeeld pioenen en dahlia’s. De mixen en kleuren verschillen per
+    seizoen.
+  details_tekst: Gepersonaliseerde lintjes, kaartjes en extra’s maken de
+    bloemenbar helemaal van jullie.
   afsluit_kop: Flowers, fun & a little something to take home.
-  afsluit_tekst: Vertel me over jullie feest. Ik bekijk datum, locatie, aantal gasten en wensen en maak daarna persoonlijk een voorstel.
+  afsluit_tekst: Vertel me over jullie feest. Ik bekijk datum, locatie, aantal
+    gasten en wensen en maak daarna persoonlijk een voorstel.
 florals:
   titel: The Bloom Florals | Trouwbloemen & bloemenstyling | BLOOM by Jana
-  beschrijving: 'The Bloom Florals: persoonlijke trouwbloemen en bloemenstyling. Van bruidsboeket en ceremoniebloemen tot tafeldecoratie en feestlocatie.'
-  hero_foto: ''
-  hero_alt: ''
+  beschrijving: "The Bloom Florals: persoonlijke trouwbloemen en bloemenstyling.
+    Van bruidsboeket en ceremoniebloemen tot tafeldecoratie en feestlocatie."
+  hero_foto: /assets/img/Jana & Yordi - Huwelijk 2026 - Lynn Van Baelen-355.jpg
   intro_kop: A wedding day in full bloom.
-  intro: |-
+  intro: >-
     Elke trouwdag verdient bloemen die helemaal passen bij jullie verhaal.
 
-    Van het eerste bruidsboeket tot de kleinste bloemendetails op jullie feestlocatie: bij The Bloom Florals draait alles om bloemen die jullie dag tot één mooi geheel maken.
 
-    Samen bekijken we jullie wensen, favoriete bloemen, kleuren en de sfeer die jullie voor ogen hebben. Op basis daarvan creëren we een persoonlijk bloemenconcept dat perfect aansluit bij jullie stijl en trouwdag.
+    Van het eerste bruidsboeket tot de kleinste bloemendetails op jullie
+    feestlocatie: bij The Bloom Florals draait alles om bloemen die jullie dag
+    tot één mooi geheel maken.
 
-    Of jullie nu dromen van een romantisch bruidsboeket, subtiele bloemendetails of een volledige bloemenstyling: we brengen jullie ideeën met liefde tot bloei.
+
+    Samen bekijken we jullie wensen, favoriete bloemen, kleuren en de sfeer die
+    jullie voor ogen hebben. Op basis daarvan creëren we een persoonlijk
+    bloemenconcept dat perfect aansluit bij jullie stijl en trouwdag.
+
+
+    Of jullie nu dromen van een romantisch bruidsboeket, subtiele bloemendetails
+    of een volledige bloemenstyling: we brengen jullie ideeën met liefde tot
+    bloei.
   afsluit_kop: Your vision. My flowers. One beautiful story.
-  afsluit_tekst: Geef jullie trouwdatum, locatie en bloemenwensen door. Daarna volgt een kennismaking en bespreken we alles verder.
+  afsluit_tekst: Geef jullie trouwdatum, locatie en bloemenwensen door. Daarna
+    volgt een kennismaking en bespreken we alles verder.
 face:
   titel: The Face Behind Bloom | Maak kennis met Jana | BLOOM by Jana
-  beschrijving: Maak kennis met Jana, het gezicht achter BLOOM by Jana en jullie partner voor persoonlijke trouwbloemen en bloemenbelevingen.
-  hero_foto: ''
-  hero_alt: ''
-  portret_foto: /assets/img/portret-jana.jpg
+  beschrijving: Maak kennis met Jana, het gezicht achter BLOOM by Jana en jullie
+    partner voor persoonlijke trouwbloemen en bloemenbelevingen.
+  hero_foto: /assets/img/Bloom by Jana - Lynn Van Baelen Photography-85.jpg
+  portret_foto: /assets/img/Bloom by Jana - Lynn Van Baelen Photography-77.jpg
   portret_alt: Portret van Jana, het gezicht achter BLOOM by Jana
   kop: Hi, I’m Jana. Nice to meet you!
-  tekst: |-
+  tekst: >-
     Hi, ik ben Jana, het gezicht achter BLOOM by Jana.
 
-    Bloemen hebben iets bijzonders. Ze brengen kleur, sfeer en emotie samen en kunnen een moment zoveel meer betekenis geven. Net dat maakt ze voor mij zo mooi.
 
-    Met BLOOM by Jana wil ik meer doen dan alleen bloemen aanbieden. Ik wil meedenken, inspireren en samen met jullie iets creëren dat helemaal bij jullie past.
+    Bloemen hebben iets bijzonders. Ze brengen kleur, sfeer en emotie samen en
+    kunnen een moment zoveel meer betekenis geven. Net dat maakt ze voor mij zo
+    mooi.
 
-    Ik hou van mooie combinaties, bijzondere details en het persoonlijke verhaal achter elke trouwdag. Van een zorgvuldig samengesteld bruidsboeket tot een bloemenbar waar gasten zelf iets moois kunnen maken of een bruidsboeket dat voor altijd bewaard blijft.
 
-    Voor mij zit de magie vaak in de kleine dingen. De kleuren die perfect samenkomen, een bloem die net dat tikkeltje extra geeft of een detail dat jullie dag helemaal eigen maakt.
+    Met BLOOM by Jana wil ik meer doen dan alleen bloemen aanbieden. Ik wil
+    meedenken, inspireren en samen met jullie iets creëren dat helemaal bij
+    jullie past.
 
-    Ik kijk ernaar uit om jullie te leren kennen en samen iets moois te laten bloeien.
+
+    Ik hou van mooie combinaties, bijzondere details en het persoonlijke verhaal
+    achter elke trouwdag. Van een zorgvuldig samengesteld bruidsboeket tot een
+    bloemenbar waar gasten zelf iets moois kunnen maken of een bruidsboeket dat
+    voor altijd bewaard blijft.
+
+
+    Voor mij zit de magie vaak in de kleine dingen. De kleuren die perfect
+    samenkomen, een bloem die net dat tikkeltje extra geeft of een detail dat
+    jullie dag helemaal eigen maakt.
+
+
+    Ik kijk ernaar uit om jullie te leren kennen en samen iets moois te laten
+    bloeien.
   handtekening: Lots of love, Jana ♡
 contact:
   titel: Contact | Offerte of reservatie aanvragen | BLOOM by Jana
-  beschrijving: Vraag een offerte of reservatie aan voor trouwbloemen, The Bloom Bar of The Bloom Frame bij BLOOM by Jana.
-  hero_foto: /assets/img/close-up.jpg
+  beschrijving: Vraag een offerte of reservatie aan voor trouwbloemen, The Bloom
+    Bar of The Bloom Frame bij BLOOM by Jana.
+  hero_foto: /assets/img/Jana & Yordi - Huwelijk 2026 - Lynn Van Baelen-542.jpg
   hero_alt: Close-up van kleurrijke bloemen
   kop: Every beautiful story starts with a hello.
-  tekst: |-
-    Zijn jullie volop bezig met de voorbereidingen van jullie trouwdag? Of hebben jullie een leuk idee dat jullie graag samen willen uitwerken?
+  tekst: >-
+    Zijn jullie volop bezig met de voorbereidingen van jullie trouwdag? Of
+    hebben jullie een leuk idee dat jullie graag samen willen uitwerken?
 
-    Ik hoor graag jullie plannen, ideeën en dromen. Of het nu gaat om jullie trouwbloemen, The Bloom Frame of The Bloom Bar: ik denk met plezier met jullie mee.
+
+    Ik hoor graag jullie plannen, ideeën en dromen. Of het nu gaat om jullie
+    trouwbloemen, The Bloom Frame of The Bloom Bar: ik denk met plezier met
+    jullie mee.
+
 
     Vertel me wat meer over jullie dag en we bekijken samen wat mogelijk is.
   handtekening: Can’t wait to hear from you! Jana ♡
