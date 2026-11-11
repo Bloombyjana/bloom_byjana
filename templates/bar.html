@@ -3,7 +3,7 @@
 {% block main %}<main id="top">
 {{ hero(p,'The Bloom Experience','The Bloom Bar','linear-gradient(160deg,var(--sage),var(--cream))',PH['hero/bar']) }}
 <section class="sec center"><h2 class="lead">{{ p.intro_kop }}</h2><div class="txt">{{ p.intro|md }}</div><a class="btn ghost" href="{{ s.brochure_bar }}" download>Download de folder (PDF)</a></section>
-<section class="sec"><div class="eyebrow">01</div><h2 class="t">The experience</h2>{{ steps(D.stappen.bar) }}</section>
+<section class="sec"><div class="eyebrow">01</div><h2 class="t">The experience</h2>{{ steps(D.stappen.bar,'bar',PH) }}</section>
 {% if PH['galerij/bar'] %}<section class="band"><div class="sec"><div class="eyebrow">02</div><h2 class="t">The setup</h2>{{ gallery(PH['galerij/bar'],D.galerij.bar_alt) }}</div></section>{% endif %}
 {% if p.bloemen_tekst %}<section class="sec center"><div class="eyebrow">03</div><h2 class="t">The flowers</h2><div class="txt"><p>{{ p.bloemen_tekst }}</p></div></section>{% endif %}
 {% if p.details_tekst %}<section class="sec center"><div class="eyebrow">04</div><h2 class="t">The details</h2><div class="txt"><p>{{ p.details_tekst }}</p></div></section>{% endif %}

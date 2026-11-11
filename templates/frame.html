@@ -1,11 +1,11 @@
-{% extends 'base.html' %}{% from 'macros.html' import hero,steps,gallery,faq,price,note %}
+{% extends 'base.html' %}{% from 'macros.html' import pic,hero,steps,gallery,faq,price,note %}
 {% set pr=D.prijzen.frame %}
 {% block main %}<main id="top">
 {{ hero(p,'The Bloom Experience','The Bloom Frame','',PH['hero/frame']) }}
 <section class="sec center"><h2 class="lead">{{ p.intro_kop }}</h2><div class="txt">{{ p.intro|md }}</div><a class="btn ghost" href="{{ s.brochure_frame }}" download>Download de folder (PDF)</a></section>
-<section class="sec" id="process"><div class="eyebrow">01</div><h2 class="t">The process</h2>{{ steps(D.stappen.frame) }}</section>
+<section class="sec" id="process"><div class="eyebrow">01</div><h2 class="t">The process</h2>{{ steps(D.stappen.frame,'frame',PH) }}</section>
 <section class="band"><div class="sec"><div class="eyebrow">02</div><h2 class="t">Your frame, your style</h2>
-<div class="grid3">{% for x in D.stappen.frame_stijl %}<div class="opt"><div class="ph"></div><h3>{{ x.titel }}</h3><p>{{ x.tekst }}</p></div>{% endfor %}</div></div></section>
+<div class="grid3">{% for x in D.stappen.frame_stijl %}<div class="opt"><div class="ph">{% set sl=PH['stappen/stijl-'~loop.index] %}{{ pic(sl[0] if sl else none,x.titel,'(max-width:760px) 90vw, 33vw') }}</div><h3>{{ x.titel }}</h3><p>{{ x.tekst }}</p></div>{% endfor %}</div></div></section>
 <section class="sec center"><div class="eyebrow">03</div><h2 class="t">Made to remember</h2><div class="txt"><p>{{ p.toevoeging_tekst }}</p></div></section>
 {% if PH['galerij/frame'] %}<section class="sec"><div class="eyebrow">04</div><h2 class="t">Bloom inspiration</h2>{{ gallery(PH['galerij/frame'],D.galerij.frame_alt) }}</section>{% endif %}
 <section class="sec" id="pricing"><div class="eyebrow">05</div><h2 class="t">Pricing</h2>

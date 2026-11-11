@@ -3,7 +3,7 @@
 {{ hero(p,'The Bloom Experience','The Bloom Florals','linear-gradient(160deg,var(--accent),var(--peach))',PH['hero/florals']) }}
 <section class="sec center"><h2 class="lead">{{ p.intro_kop }}</h2><div class="txt">{{ p.intro|md }}</div></section>
 <section class="sec"><div class="cats">{% set keys=['bridal','ceremony','table','venue'] %}{% for c in D.categorieen %}{% set cl=PH['categorie/'+keys[loop.index0]] if loop.index0<4 else [] %}<div class="cat"><div class="ph">{{ pic(cl[0] if cl else none,c.naam,'(max-width:760px) 100vw, 50vw') }}</div><h3>{{ c.naam }}</h3><p>{{ c.tekst }}</p></div>{% endfor %}</div></section>
-<section class="band"><div class="sec"><div class="eyebrow">01</div><h2 class="t">The process</h2>{{ steps(D.stappen.florals) }}</div></section>
+<section class="band"><div class="sec"><div class="eyebrow">01</div><h2 class="t">The process</h2>{{ steps(D.stappen.florals,'florals',PH) }}</div></section>
 {% if PH['galerij/florals'] %}<section class="sec"><div class="eyebrow">02</div><h2 class="t">Bloom inspiration</h2>{{ gallery(PH['galerij/florals'],D.galerij.florals_alt) }}</section>{% endif %}
 {% if D.reviews %}<section class="sec" style="max-width:800px"><div class="eyebrow">03</div><h2 class="t">Reviews</h2>{% for r in D.reviews %}<div class="quote">{{ r.tekst }}<small>{{ r.naam }}</small></div><br>{% endfor %}</section>{% endif %}
 <section class="band center" id="request"><div class="sec"><h2 class="lead">{{ p.afsluit_kop }}</h2><div class="txt"><p>{{ p.afsluit_tekst }}</p></div>
