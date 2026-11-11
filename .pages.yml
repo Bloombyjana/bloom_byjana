@@ -1,6 +1,154 @@
 media:
-  input: assets/img
-  output: /assets/img
+- name: hero-home
+  label: 'Startpagina: hoofdfoto'
+  input: assets/img/hero/home
+  output: /assets/img/hero/home
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: hero-frame
+  label: 'The Bloom Frame: hoofdfoto'
+  input: assets/img/hero/frame
+  output: /assets/img/hero/frame
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: hero-bar
+  label: 'The Bloom Bar: hoofdfoto'
+  input: assets/img/hero/bar
+  output: /assets/img/hero/bar
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: hero-florals
+  label: 'The Bloom Florals: hoofdfoto'
+  input: assets/img/hero/florals
+  output: /assets/img/hero/florals
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: hero-face
+  label: 'The Face Behind Bloom: hoofdfoto'
+  input: assets/img/hero/face
+  output: /assets/img/hero/face
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: hero-contact
+  label: 'Contact: hoofdfoto'
+  input: assets/img/hero/contact
+  output: /assets/img/hero/contact
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: galerij-frame
+  label: 'The Bloom Frame: galerij'
+  input: assets/img/galerij/frame
+  output: /assets/img/galerij/frame
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: galerij-bar
+  label: 'The Bloom Bar: galerij'
+  input: assets/img/galerij/bar
+  output: /assets/img/galerij/bar
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: galerij-florals
+  label: 'The Bloom Florals: galerij'
+  input: assets/img/galerij/florals
+  output: /assets/img/galerij/florals
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: galerij-face
+  label: 'The Face Behind Bloom: foto’s onderaan'
+  input: assets/img/galerij/face
+  output: /assets/img/galerij/face
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: portret
+  label: 'The Face Behind Bloom: portret van Jana'
+  input: assets/img/portret
+  output: /assets/img/portret
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: categorie-bridal
+  label: 'Florals: Bridal Flowers'
+  input: assets/img/categorie/bridal
+  output: /assets/img/categorie/bridal
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: categorie-ceremony
+  label: 'Florals: Ceremony Flowers'
+  input: assets/img/categorie/ceremony
+  output: /assets/img/categorie/ceremony
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: categorie-table
+  label: 'Florals: Table Flowers'
+  input: assets/img/categorie/table
+  output: /assets/img/categorie/table
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: categorie-venue
+  label: 'Florals: Venue Flowers'
+  input: assets/img/categorie/venue
+  output: /assets/img/categorie/venue
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
 content:
 - name: paginas
   label: Teksten en hoofdfoto’s
@@ -17,17 +165,12 @@ content:
     - name: beschrijving
       label: Beschrijving in Google (SEO)
       type: text
-    - name: hero_fotos
-      label: Vier openingsfoto’s
-      type: object
-      fields:
-      - name: foto
-        label: Foto
-        type: image
-      - name: alt
-        label: Beschrijving van de foto
-        type: string
-      list: true
+    - name: hero_alt
+      label: Beschrijving hoofdfoto
+      type: string
+    - name: intro_kop
+      label: Kop introductie
+      type: string
     - name: intro
       label: Introductie
       type: text
@@ -47,9 +190,6 @@ content:
     - name: beschrijving
       label: Beschrijving in Google (SEO)
       type: text
-    - name: hero_foto
-      label: Hoofdfoto
-      type: image
     - name: hero_alt
       label: Beschrijving hoofdfoto
       type: string
@@ -78,9 +218,6 @@ content:
     - name: beschrijving
       label: Beschrijving in Google (SEO)
       type: text
-    - name: hero_foto
-      label: Hoofdfoto
-      type: image
     - name: hero_alt
       label: Beschrijving hoofdfoto
       type: string
@@ -112,9 +249,6 @@ content:
     - name: beschrijving
       label: Beschrijving in Google (SEO)
       type: text
-    - name: hero_foto
-      label: Hoofdfoto
-      type: image
     - name: hero_alt
       label: Beschrijving hoofdfoto
       type: string
@@ -140,15 +274,9 @@ content:
     - name: beschrijving
       label: Beschrijving in Google (SEO)
       type: text
-    - name: hero_foto
-      label: Hoofdfoto
-      type: image
     - name: hero_alt
       label: Beschrijving hoofdfoto
       type: string
-    - name: portret_foto
-      label: Portretfoto
-      type: image
     - name: portret_alt
       label: Beschrijving portretfoto
       type: string
@@ -171,9 +299,6 @@ content:
     - name: beschrijving
       label: Beschrijving in Google (SEO)
       type: text
-    - name: hero_foto
-      label: Hoofdfoto
-      type: image
     - name: hero_alt
       label: Beschrijving hoofdfoto
       type: string
@@ -306,9 +431,6 @@ content:
     - name: tekst
       label: Tekst
       type: text
-    - name: foto
-      label: Foto (optioneel)
-      type: image
     list: true
   - name: frame_stijl
     label: 'Frame: your frame, your style'
@@ -320,9 +442,6 @@ content:
     - name: tekst
       label: Tekst
       type: text
-    - name: foto
-      label: Foto (optioneel)
-      type: image
     list: true
   - name: bar
     label: 'Bar: the experience'
@@ -334,9 +453,6 @@ content:
     - name: tekst
       label: Tekst
       type: text
-    - name: foto
-      label: Foto (optioneel)
-      type: image
     list: true
   - name: florals
     label: 'Florals: the process'
@@ -348,9 +464,6 @@ content:
     - name: tekst
       label: Tekst
       type: text
-    - name: foto
-      label: Foto (optioneel)
-      type: image
     list: true
 - name: categorieen
   label: 'Florals: de vier categorieën'
@@ -364,9 +477,6 @@ content:
   - name: tekst
     label: Tekst
     type: text
-  - name: foto
-    label: Foto
-    type: image
 - name: diensten
   label: 'Startpagina: de drie diensten'
   type: file
@@ -382,61 +492,26 @@ content:
   - name: link
     label: Link
     type: string
-  - name: foto
-    label: Foto
-    type: image
   - name: alt
     label: Beschrijving foto
     type: string
 - name: galerij
-  label: Fotogalerijen
+  label: Beschrijving van de fotogalerijen
   type: file
   path: data/galerij.yml
   fields:
-  - name: frame
-    label: Bloom Frame
-    type: object
-    fields:
-    - name: foto
-      label: Foto
-      type: image
-    - name: alt
-      label: Beschrijving van de foto
-      type: string
-    list: true
-  - name: bar
-    label: Bloom Bar
-    type: object
-    fields:
-    - name: foto
-      label: Foto
-      type: image
-    - name: alt
-      label: Beschrijving van de foto
-      type: string
-    list: true
-  - name: florals
-    label: Bloom Florals
-    type: object
-    fields:
-    - name: foto
-      label: Foto
-      type: image
-    - name: alt
-      label: Beschrijving van de foto
-      type: string
-    list: true
-  - name: face
-    label: The Face Behind Bloom
-    type: object
-    fields:
-    - name: foto
-      label: Foto
-      type: image
-    - name: alt
-      label: Beschrijving van de foto
-      type: string
-    list: true
+  - name: frame_alt
+    label: Beschrijving foto’s Bloom Frame
+    type: string
+  - name: bar_alt
+    label: Beschrijving foto’s Bloom Bar
+    type: string
+  - name: florals_alt
+    label: Beschrijving foto’s Bloom Florals
+    type: string
+  - name: face_alt
+    label: Beschrijving foto’s Face Behind Bloom
+    type: string
 - name: reviews
   label: Reviews van koppels
   type: file
