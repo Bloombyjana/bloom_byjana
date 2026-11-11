@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#F6F1EA">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{{ s.naam }}"><meta property="og:locale" content="nl_BE">
 <meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ desc }}"><meta property="og:url" content="{{ base }}{{ page.url }}">
-<meta property="og:image" content="{{ base }}{{ og_image }}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{{ base }}{{ og_image }}">
+{% if og_image %}<meta property="og:image" content="{{ base }}{{ og_image }}"><meta name="twitter:image" content="{{ base }}{{ og_image }}">{% endif %}<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/site.css">

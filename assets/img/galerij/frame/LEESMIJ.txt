@@ -1,0 +1,3 @@
+Map: The Bloom Frame: galerij
+Sleep hier je foto in (jpg, png of webp). De naam maakt niet uit.
+Alle foto's in deze map komen in de galerij, de nieuwste eerst.

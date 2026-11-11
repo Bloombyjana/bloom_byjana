@@ -1,22 +1,4 @@
-frame:
-- foto: /assets/img/inspiratie-1.jpg
-  alt: Gemaakt bloemenframe, inspiratie 1
-- foto: /assets/img/inspiratie-2.jpg
-  alt: Gemaakt bloemenframe, inspiratie 2
-- foto: /assets/img/inspiratie-3.jpg
-  alt: Gemaakt bloemenframe, inspiratie 3
-- foto: /assets/img/inspiratie-4.jpg
-  alt: Gemaakt bloemenframe, inspiratie 4
-- foto: /assets/img/inspiratie-5.jpg
-  alt: Gemaakt bloemenframe, inspiratie 5
-- foto: /assets/img/inspiratie-6.jpg
-  alt: Gemaakt bloemenframe, inspiratie 6
-bar:
-- foto: /assets/img/bar-foto1.jpg
-  alt: Bloemenbar met bloemen en vaasjes
-- foto: /assets/img/bar-foto3.jpg
-  alt: Gasten maken een boeketje aan de bloemenbar
-- foto: /assets/img/bar-foto5.jpg
-  alt: Close-up van bloemen op de bloemenbar
-florals: []
-face: []
+frame_alt: Gemaakt bloemenframe
+bar_alt: Bloemenbar op een trouwfeest
+florals_alt: Bloemen voor een trouwdag
+face_alt: Jana aan het werk

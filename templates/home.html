@@ -1,12 +1,10 @@
-{% extends 'base.html' %}{% from 'macros.html' import img %}
+{% extends 'base.html' %}{% from 'macros.html' import pic %}
 {% block main %}<main id="top">
-<section class="hero" aria-label="Sfeerbeelden">
-{% for f in p.hero_fotos %}<div class="ph">{{ img(f.foto,f.alt,True) }}</div>
-{% endfor %}</section>
-<div class="hint">scroll to discover ↓</div>
-<section class="intro"><h1>Your day. <em>Your flowers.</em> Your story.</h1><p>{{ p.intro }}</p></section>
+{% set hl=PH['hero/home'] %}<section class="fhero"><div class="fbg">{{ pic(hl[0] if hl else none,p.hero_alt,'100vw',True) }}</div>
+<div class="ftitle wide"><div class="eyebrow">BLOOM by Jana</div><h1>Your day.<br>Your flowers.<br>Your story.</h1></div><div class="hint">scroll to discover ↓</div></section>
+<section class="intro"><h2 class="lead">{{ p.intro_kop }}</h2><p>{{ p.intro }}</p></section>
 <section class="cards" id="experience">
-{% for d in D.diensten %}<a class="card" href="{{ d.link }}"><div class="ph">{{ img(d.foto,d.alt) }}</div><h2>{{ d.naam }}</h2><p>{{ d.tekst }}</p><span>Ontdek</span></a>
+{% for d in D.diensten %}{% set cl=PH['hero/'+d.sleutel] %}<a class="card" href="{{ d.link }}"><div class="ph">{{ pic(cl[0] if cl else none,d.alt,'(max-width:760px) 100vw, 33vw') }}</div><h2>{{ d.naam }}</h2><p>{{ d.tekst }}</p><span>Ontdek</span></a>
 {% endfor %}</section>
 <section class="meet" id="jana"><h2>The face behind Bloom</h2><p>{{ p.jana_tekst }}</p><a class="btn" href="/the-face-behind-bloom/">Meet Jana</a></section>
 <section class="cta" id="contact"><h2>Ready to make your day bloom?</h2><p>{{ p.cta_tekst }}</p><a class="btn" href="/contact/">Let’s talk!</a></section>

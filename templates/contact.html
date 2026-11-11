@@ -1,6 +1,6 @@
 {% extends 'base.html' %}{% from 'macros.html' import hero,note %}
 {% block main %}<main id="top">
-{{ hero(p,'Contact','Let’s make your day bloom','linear-gradient(160deg,var(--rose),var(--sage))') }}
+{{ hero(p,'Contact','Let’s make your day bloom','linear-gradient(160deg,var(--rose),var(--sage))',PH['hero/contact']) }}
 <section class="sec center"><h2 class="lead">{{ p.kop }}</h2><div class="txt">{{ p.tekst|md }}</div><div class="sign">{{ p.handtekening }}</div></section>
 <section class="band center" id="request"><div class="sec">
 <form class="form" id="f" data-dienst="">

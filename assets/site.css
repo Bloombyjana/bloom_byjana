@@ -132,3 +132,10 @@ details p{color:var(--muted);margin:10px 0 0}
 .prose h1{font-family:'The Seasons','Cormorant',serif;font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin:0 0 20px}
 .prose h2{font-family:'The Seasons','Cormorant',serif;font-weight:500;font-size:1.7rem;margin:32px 0 8px}
 .prose p,.prose li{color:var(--muted)}
+
+.ftitle.wide{bottom:12vh}
+.ftitle.wide h1{max-width:none}
+.fhero .hint{position:absolute;z-index:1;left:0;right:0;bottom:2vh;padding:0;color:#fff;text-align:center}
+.intro h2.lead{margin-bottom:16px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent);color:#fff;opacity:1}

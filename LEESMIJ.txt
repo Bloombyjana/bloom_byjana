@@ -13,10 +13,18 @@ EENMALIGE INSTALLATIE
 1. Zet alle bestanden in je GitHub-repository (op de hoofdtak, "main").
 2. GitHub > Settings > Pages > Source: kies "GitHub Actions". Het eerste bouwen duurt ongeveer een minuut.
 3. Laat bloom-frame-brochure.pdf, bloom-bar-brochure.pdf en favicon.png in de map public/ staan (zet ze er anders in).
-4. Zet je foto's in assets/img/ (zie assets/img/LEESMIJ.txt) of upload ze via het beheerscherm.
+4. Foto's: zie het kopje FOTO'S hieronder.
+
+FOTO'S (SLEPEN EN KLAAR, DE NAAM MAAKT NIET UIT)
+- Elke foto hoort in een map. In het beheerscherm (Media) staan die mappen met duidelijke namen,
+  zoals "The Bloom Frame: hoofdfoto" en "The Bloom Frame: galerij".
+- Hoofdfoto-mappen: de NIEUWSTE foto in die map wordt de hoofdfoto. Oude foto's mag je verwijderen.
+- Galerij-mappen: alle foto's komen in de galerij, de nieuwste eerst.
+- De site maakt zelf kleinere, snelle versies (WebP). Je hoeft niets te verkleinen. Gebruik jpg, png of webp (geen HEIC van de iPhone: stel de camera in op "Meest compatibel" of exporteer als jpg).
+- Alt-teksten (beschrijving voor Google en screenreaders) pas je aan onder "Teksten en hoofdfoto's" en "Beschrijving van de fotogalerijen".
 
 VISUEEL BEHEERSCHERM (Pages CMS)
-1. Ga naar pagescms.org en log in met GitHub.
+1. Ga naar app.pagescms.org en log in met GitHub.
 2. Installeer de Pages CMS GitHub App op je repository en open die.
 3. Je ziet lijsten zoals "Prijzen", "Teksten en hoofdfoto's", "Fotogalerijen" en "Reviews van koppels".
 4. Pas aan, kies Opslaan: de wijziging staat na ongeveer een minuut live.
