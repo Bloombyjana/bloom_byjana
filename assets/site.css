@@ -126,7 +126,8 @@ details p{color:var(--muted);margin:10px 0 0}
 .strip .ph:nth-child(1){background:var(--rose);border-radius:200px 200px 20px 20px}.strip .ph:nth-child(2){background:var(--cream);margin-top:6vh}.strip .ph:nth-child(3){background:var(--peach);border-radius:20px 90px}.strip .ph:nth-child(4){background:var(--sage);margin-top:3vh}
 .insta{display:inline-block;margin-top:14px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid var(--accent);padding-bottom:4px;text-decoration:none}
 @media(max-width:760px){.two{grid-template-columns:1fr}.portrait{max-width:320px;margin:0 auto;width:100%}.strip{grid-template-columns:1fr 1fr}.strip .ph{margin-top:0!important}}
-.ph,.fbg,.portrait{position:relative;overflow:hidden}
+.ph,.portrait{position:relative;overflow:hidden}
+.fbg{overflow:hidden}
 .ph img,.fbg img,.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .prose{max-width:760px;margin:0 auto;padding:6vh 5vw 10vh}
 .prose h1{font-family:'The Seasons','Cormorant',serif;font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin:0 0 20px}
