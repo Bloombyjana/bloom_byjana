@@ -140,3 +140,7 @@ details p{color:var(--muted);margin:10px 0 0}
 .intro h2.lead{margin-bottom:16px}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--accent)}
 .btn.ghost:hover{background:var(--accent);color:#fff;opacity:1}
+/* galerij met weinig foto's: eerste tegel mag nooit samenklappen */
+.gal .ph:nth-child(1){min-height:240px}
+.gal .ph:only-child{grid-column:1/-1;grid-row:auto;aspect-ratio:16/9;min-height:0}
+.gal .ph:nth-child(1):nth-last-child(2),.gal .ph:nth-child(2):last-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3;min-height:0}
