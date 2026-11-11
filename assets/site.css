@@ -141,6 +141,9 @@ details p{color:var(--muted);margin:10px 0 0}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--accent)}
 .btn.ghost:hover{background:var(--accent);color:#fff;opacity:1}
 /* galerij met weinig foto's: eerste tegel mag nooit samenklappen */
-.gal .ph:nth-child(1){min-height:240px}
-.gal .ph:only-child{grid-column:1/-1;grid-row:auto;aspect-ratio:16/9;min-height:0}
-.gal .ph:nth-child(1):nth-last-child(2),.gal .ph:nth-child(2):last-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3;min-height:0}
+.gal .ph:only-child{grid-column:1/-1;grid-row:auto;aspect-ratio:16/9}
+@media(min-width:761px){.gal .ph:nth-child(1){min-height:240px}.gal .ph:nth-child(1):nth-last-child(2),.gal .ph:nth-child(2):last-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3;min-height:0}}
+/* subtiele schaduw voor leesbaarheid van de titel over de foto */
+.ftitle h1{text-shadow:0 1px 18px rgba(40,28,20,.28),0 0 2px rgba(40,28,20,.18)}
+.ftitle .eyebrow{text-shadow:0 1px 10px rgba(40,28,20,.3)}
+.fhero .hint{text-shadow:0 1px 10px rgba(40,28,20,.25)}
