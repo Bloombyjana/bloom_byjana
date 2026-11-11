@@ -1,4 +1,144 @@
 media:
+- name: stap-frame-1
+  label: 'The Bloom Frame: process: foto 1'
+  input: assets/img/stappen/frame-1
+  output: /assets/img/stappen/frame-1
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-frame-2
+  label: 'The Bloom Frame: process: foto 2'
+  input: assets/img/stappen/frame-2
+  output: /assets/img/stappen/frame-2
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-frame-3
+  label: 'The Bloom Frame: process: foto 3'
+  input: assets/img/stappen/frame-3
+  output: /assets/img/stappen/frame-3
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-frame-4
+  label: 'The Bloom Frame: process: foto 4'
+  input: assets/img/stappen/frame-4
+  output: /assets/img/stappen/frame-4
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-stijl-1
+  label: 'The Bloom Frame: your frame, your style: foto 1'
+  input: assets/img/stappen/stijl-1
+  output: /assets/img/stappen/stijl-1
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-stijl-2
+  label: 'The Bloom Frame: your frame, your style: foto 2'
+  input: assets/img/stappen/stijl-2
+  output: /assets/img/stappen/stijl-2
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-stijl-3
+  label: 'The Bloom Frame: your frame, your style: foto 3'
+  input: assets/img/stappen/stijl-3
+  output: /assets/img/stappen/stijl-3
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-bar-1
+  label: 'The Bloom Bar: the experience: foto 1'
+  input: assets/img/stappen/bar-1
+  output: /assets/img/stappen/bar-1
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-bar-2
+  label: 'The Bloom Bar: the experience: foto 2'
+  input: assets/img/stappen/bar-2
+  output: /assets/img/stappen/bar-2
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-bar-3
+  label: 'The Bloom Bar: the experience: foto 3'
+  input: assets/img/stappen/bar-3
+  output: /assets/img/stappen/bar-3
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-florals-1
+  label: 'The Bloom Florals: the process: foto 1'
+  input: assets/img/stappen/florals-1
+  output: /assets/img/stappen/florals-1
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-florals-2
+  label: 'The Bloom Florals: the process: foto 2'
+  input: assets/img/stappen/florals-2
+  output: /assets/img/stappen/florals-2
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-florals-3
+  label: 'The Bloom Florals: the process: foto 3'
+  input: assets/img/stappen/florals-3
+  output: /assets/img/stappen/florals-3
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+- name: stap-florals-4
+  label: 'The Bloom Florals: the process: foto 4'
+  input: assets/img/stappen/florals-4
+  output: /assets/img/stappen/florals-4
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
 - name: hero-home
   label: 'Startpagina: hoofdfoto'
   input: assets/img/hero/home

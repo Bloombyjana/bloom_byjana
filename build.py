@@ -26,7 +26,7 @@ def ld(url,svc,fk,desc,home=False):
     return Markup(json.dumps({"@context":"https://schema.org","@graph":g},ensure_ascii=False).replace('<','\\u003c'))
 shutil.rmtree('_site',ignore_errors=True);os.makedirs('_site')
 shutil.copytree('assets','_site/assets',ignore=shutil.ignore_patterns('img'))
-FOLDERS=['hero/home','hero/frame','hero/bar','hero/florals','hero/face','hero/contact','galerij/frame','galerij/bar','galerij/florals','galerij/face','portret','categorie/bridal','categorie/ceremony','categorie/table','categorie/venue']
+FOLDERS=['hero/home','hero/frame','hero/bar','hero/florals','hero/face','hero/contact','galerij/frame','galerij/bar','galerij/florals','galerij/face','portret','categorie/bridal','categorie/ceremony','categorie/table','categorie/venue']+[f'stappen/{k}-{i}' for k,n in (('frame',4),('stijl',3),('bar',3),('florals',4)) for i in range(1,n+1)]
 EXT=('.jpg','.jpeg','.png','.webp')
 def stamp(path):
     try:
