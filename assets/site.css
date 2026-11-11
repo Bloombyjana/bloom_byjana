@@ -147,3 +147,6 @@ details p{color:var(--muted);margin:10px 0 0}
 .ftitle h1{text-shadow:0 1px 18px rgba(40,28,20,.28),0 0 2px rgba(40,28,20,.18)}
 .ftitle .eyebrow{text-shadow:0 1px 10px rgba(40,28,20,.3)}
 .fhero .hint{text-shadow:0 1px 10px rgba(40,28,20,.25)}
+/* titels in de hoofdfoto: overal even groot, op smartphone kleiner */
+.ftitle .eyebrow{font-weight:500;text-shadow:0 1px 12px rgba(40,28,20,.4),0 0 3px rgba(40,28,20,.2)}
+@media(max-width:760px){.ftitle h1{font-size:2.4rem;line-height:1.02;max-width:none}.ftitle{bottom:9vh}.ftitle.wide{bottom:10vh}}
