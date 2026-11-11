@@ -1,5 +1,5 @@
 """Bouwt de website uit templates/ en data/ naar _site/. Draait automatisch via GitHub Actions."""
-import os,re,shutil,json,subprocess,yaml,markdown,glob
+import os,re,time,shutil,json,subprocess,yaml,markdown,glob
 from collections import defaultdict
 from PIL import Image,ImageOps
 from jinja2 import Environment,FileSystemLoader,select_autoescape
@@ -64,7 +64,7 @@ for out,tpl,key,url,svc,fk in PAGES:
     title=p.get('titel') or ('Privacybeleid | BLOOM by Jana' if 'privacy' in url else 'Pagina niet gevonden | BLOOM by Jana')
     desc=p.get('beschrijving') or ('Hoe BLOOM by Jana omgaat met je gegevens.' if 'privacy' in url else 'Pagina niet gevonden.')
     og=OG
-    html=env.get_template(tpl).render(D=D,s=s,p=p,PH=PH,page={'url':url,'noindex':url=='/404.html'},title=title,desc=desc,base=BASE,og_image=og,ld=ld(url,svc,fk,desc,key=='home') if key else None)
+    html=env.get_template(tpl).render(D=D,s=s,p=p,PH=PH,ver=str(int(time.time())),page={'url':url,'noindex':url=='/404.html'},title=title,desc=desc,base=BASE,og_image=og,ld=ld(url,svc,fk,desc,key=='home') if key else None)
     path=os.path.join('_site',out);os.makedirs(os.path.dirname(path),exist_ok=True);open(path,'w',encoding='utf-8').write(html)
 for f in glob.glob('public/*'):
     (shutil.copytree if os.path.isdir(f) else shutil.copy)(f,os.path.join('_site',os.path.basename(f)))
