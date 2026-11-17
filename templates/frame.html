@@ -18,17 +18,17 @@
 <div><label for="r1">Voornaam</label><input id="r1" required></div>
 <div><label for="r2">Achternaam</label><input id="r2" required></div>
 <div><label for="r3">E-mailadres</label><input id="r3" type="email" required></div>
-<div><label for="r4">Telefoonnummer</label><input id="r4" type="tel"></div>
+<div><label for="r4">Telefoonnummer</label><input id="r4" type="tel" required></div>
 <div><label for="r5">Trouwdatum</label><input id="r5" type="date" required></div>
 <div><label for="r6">Locatie van het feest (optioneel)</label><input id="r6"></div>
 <div class="full"><label for="r7">Type frame</label><select id="r7" data-k="Type frame" required><option value="">Kies een formaat</option>
 <optgroup label="Vlakke inlijsting">{% for x in pr.vlak %}<option>{{ x.naam }} vlak — €{{ x.prijs }}</option>{% endfor %}</optgroup>
 <optgroup label="Shadowbox">{% for x in pr.shadowbox %}<option>{{ x.naam }} shadowbox — €{{ x.prijs }}</option>{% endfor %}</optgroup></select></div>
-<div><label for="r8">Materiaal</label><select id="r8" data-k="Materiaal"><option value="">Nog niet beslist</option><option>Hout — licht eik</option><option>Hout — donker kers</option><option>Aluminium — glanzend wit</option><option>Aluminium — mat zwart</option><option>Aluminium — mat goud</option></select></div>
-<div><label for="r9">Dubbelzijdig glas (+€{{ pr.glas_extra }}, enkel vlakke inlijsting)</label><select id="r9" data-k="Dubbelzijdig glas"><option>Neen</option><option>Ja</option></select></div>
+<div class="full"><label for="r9">Dubbelzijdig glas (+€{{ pr.glas_extra }}, enkel vlakke inlijsting)</label><select id="r9" data-k="Dubbelzijdig glas"><option>Neen</option><option>Ja</option></select></div>
 <div class="full"><label for="r10">Persoonlijke toevoeging (+€{{ pr.toevoeging_extra }}, enkel A3)</label><select id="r10" data-k="Persoonlijke toevoeging"><option>Geen</option><option>Geloften</option><option>Trouwuitnodiging</option><option>Foto</option><option>Meerdere (vermeld in opmerkingen)</option></select></div>
 <div class="full"><label for="r11">Opmerkingen (optioneel)</label><textarea id="r11" data-k="Opmerkingen"></textarea></div>
 {{ note() }}
+<p class="full note" style="margin:0;text-align:left">Na je reservatie hoor je snel van mij per mail. Zie je niets? Kijk dan zeker even in je spamfolder.</p>
 <button class="btn" type="submit">Reserve your date</button></form>
-<p class="thanks" id="ty">Dank je wel! Jouw reservatie is verstuurd. Ik neem contact met jullie op om alles te bevestigen.</p></div></section>
+<p class="thanks" id="ty">Dank je wel! Jouw reservatie is verstuurd. Ik neem contact met jullie op om alles te bevestigen.<br>Kijk zeker ook even in je spamfolder, want mijn mail belandt daar soms.</p></div></section>
 </main>{% endblock %}
